@@ -1,0 +1,1351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90231202C426DA900C4AC3C /* AddBikeFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902311F2C426DA900C4AC3C /* AddBikeFormView.swift */; };
+		A90231232C426E6A00C4AC3C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90231222C426E6A00C4AC3C /* ProfileViewModel.swift */; };
+		A90231252C426ECE00C4AC3C /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90231242C426ECE00C4AC3C /* FirestoreService.swift */; };
+		A90231272C426F9300C4AC3C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A90231262C426F9300C4AC3C /* FirebaseStorage */; };
+		A90231292C426FA000C4AC3C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A90231282C426FA000C4AC3C /* FirebaseFirestoreSwift */; };
+		A902312B2C42701100C4AC3C /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902312A2C42701100C4AC3C /* UserInfo.swift */; };
+		A902312D2C427F2F00C4AC3C /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902312C2C427F2F00C4AC3C /* CalendarViewModel.swift */; };
+		A90E1FE12C3AF66300E7E1C8 /* CustomUiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FE02C3AF66300E7E1C8 /* CustomUiLabel.swift */; };
+		A90E1FE32C3AFCEC00E7E1C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A90E1FE22C3AFCEC00E7E1C8 /* GoogleService-Info.plist */; };
+		A90E1FE72C3BFB1C00E7E1C8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FE62C3BFB1C00E7E1C8 /* HomeViewModel.swift */; };
+		A90E1FE92C3BFBA000E7E1C8 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FE82C3BFBA000E7E1C8 /* Bike.swift */; };
+		A90E1FEB2C3BFBC900E7E1C8 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FEA2C3BFBC900E7E1C8 /* Slider.swift */; };
+		A90E1FED2C3BFBFF00E7E1C8 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FEC2C3BFBFF00E7E1C8 /* CustomStackView.swift */; };
+		A90E1FEF2C3BFC1A00E7E1C8 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FEE2C3BFC1A00E7E1C8 /* CustomBackgroundView.swift */; };
+		A90E1FF12C3BFC3200E7E1C8 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FF02C3BFC3200E7E1C8 /* CustomImageView.swift */; };
+		A90E1FF32C3BFC6400E7E1C8 /* SmallCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FF22C3BFC6400E7E1C8 /* SmallCustomButton.swift */; };
+		A90E1FF52C3BFC9A00E7E1C8 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FF42C3BFC9A00E7E1C8 /* CustomCollectionView.swift */; };
+		A90E1FF72C3BFCCC00E7E1C8 /* BikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FF62C3BFCCC00E7E1C8 /* BikeCollectionViewCell.swift */; };
+		A90E1FF92C3BFDC400E7E1C8 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FF82C3BFDC400E7E1C8 /* SliderCollectionViewCell.swift */; };
+		A90E1FFF2C3D823800E7E1C8 /* ProfileHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FFE2C3D823800E7E1C8 /* ProfileHostingViewController.swift */; };
+		A90E20012C3D829C00E7E1C8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E20002C3D829C00E7E1C8 /* ProfileView.swift */; };
+		A90E20032C3D83DC00E7E1C8 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E20022C3D83DC00E7E1C8 /* GridViewCell.swift */; };
+		A90E20052C3D840000E7E1C8 /* RentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E20042C3D840000E7E1C8 /* RentHistoryCell.swift */; };
+		A914DC9A2C4BE9B800E2A224 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DC992C4BE9B800E2A224 /* ScannerViewController.swift */; };
+		A914DCA22C4C4A9300E2A224 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCA12C4C4A9300E2A224 /* AlertView.swift */; };
+		A914DCA42C4C646C00E2A224 /* JsonBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCA32C4C646C00E2A224 /* JsonBackup.swift */; };
+		A914DCA62C4D0C3300E2A224 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCA52C4D0C3300E2A224 /* ScannerViewModel.swift */; };
+		A914DCB12C4E783E00E2A224 /* DetectionResultValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB02C4E783E00E2A224 /* DetectionResultValidator.swift */; };
+		A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB22C4E786300E2A224 /* Classifier.swift */; };
+		A914DCB52C4E788C00E2A224 /* AddBikeFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */; };
+		A914DCB72C4E79B500E2A224 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB62C4E79B500E2A224 /* MobileNetV2.mlmodel */; };
+		A914DCBA2C4EABB200E2A224 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB92C4EABB200E2A224 /* LaunchScreenViewController.swift */; };
+		A942A3AF2C3EAB3500D0833E /* BikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942A3AE2C3EAB3500D0833E /* BikeService.swift */; };
+		A942A3B32C3EBFC000D0833E /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942A3B22C3EBFC000D0833E /* Booking.swift */; };
+		A942A3B52C3EC10300D0833E /* midPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942A3B42C3EC10300D0833E /* midPoint.swift */; };
+		A942CB812C4917AE0047F7A3 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB802C4917AE0047F7A3 /* ShopViewModel.swift */; };
+		A942CB832C4917BB0047F7A3 /* ShopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB822C4917BB0047F7A3 /* ShopMainView.swift */; };
+		A942CB852C4917C80047F7A3 /* ShopHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB842C4917C80047F7A3 /* ShopHostingViewController.swift */; };
+		A942CB872C4919380047F7A3 /* LeaderboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB862C4919380047F7A3 /* LeaderboardViewModel.swift */; };
+		A942CB892C49195D0047F7A3 /* LeaderboardHostingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB882C49195D0047F7A3 /* LeaderboardHostingViewController.swift */; };
+		A942CB8B2C4919860047F7A3 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB8A2C4919860047F7A3 /* LeaderboardView.swift */; };
+		A942CB8D2C4919950047F7A3 /* UsersScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB8C2C4919950047F7A3 /* UsersScrollView.swift */; };
+		A942CB8F2C491DE90047F7A3 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB8E2C491DE90047F7A3 /* ProductCard.swift */; };
+		A942CB912C491E030047F7A3 /* ProductsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB902C491E030047F7A3 /* ProductsListView.swift */; };
+		A942CB932C491E180047F7A3 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB922C491E180047F7A3 /* CategoriesCell.swift */; };
+		A942CB952C491E440047F7A3 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB942C491E440047F7A3 /* Footer.swift */; };
+		A942CB982C491E850047F7A3 /* NetworkServicePackage in Frameworks */ = {isa = PBXBuildFile; productRef = A942CB972C491E850047F7A3 /* NetworkServicePackage */; };
+		A942CB9A2C491ED90047F7A3 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB992C491ED90047F7A3 /* Product.swift */; };
+		A942CB9D2C494CC90047F7A3 /* AllBikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */; };
+		A942CBA02C49CD040047F7A3 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = A942CB9F2C49CD040047F7A3 /* SVGKit */; };
+		A942CBA22C49CD040047F7A3 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A942CBA12C49CD040047F7A3 /* SVGKitSwift */; };
+		A942CBA42C49D30A0047F7A3 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CBA32C49D30A0047F7A3 /* DetailsViewModel.swift */; };
+		A942CBA62C4A99920047F7A3 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CBA52C4A99920047F7A3 /* StarRatingView.swift */; };
+		A94AD8262C7B80A80079B8D8 /* voltage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A94AD8252C7B80A70079B8D8 /* voltage.usdz */; };
+		A94AD82D2C7BC3E30079B8D8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94AD82C2C7BC3E30079B8D8 /* WidgetKit.framework */; };
+		A94AD82F2C7BC3E30079B8D8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94AD82E2C7BC3E30079B8D8 /* SwiftUI.framework */; };
+		A94AD8322C7BC3E30079B8D8 /* BikeAppWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD8312C7BC3E30079B8D8 /* BikeAppWidgetBundle.swift */; };
+		A94AD8342C7BC3E30079B8D8 /* BikeAppWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD8332C7BC3E30079B8D8 /* BikeAppWidgetLiveActivity.swift */; };
+		A94AD8362C7BC3E30079B8D8 /* BikeAppWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD8352C7BC3E30079B8D8 /* BikeAppWidget.swift */; };
+		A94AD8382C7BC3E30079B8D8 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD8372C7BC3E30079B8D8 /* AppIntent.swift */; };
+		A94AD83A2C7BC3E50079B8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94AD8392C7BC3E50079B8D8 /* Assets.xcassets */; };
+		A94AD83E2C7BC3E50079B8D8 /* BikeAppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A94AD82B2C7BC3E30079B8D8 /* BikeAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A94AD8482C7D02700079B8D8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94AD82C2C7BC3E30079B8D8 /* WidgetKit.framework */; };
+		A94AD8492C7D02700079B8D8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94AD82E2C7BC3E30079B8D8 /* SwiftUI.framework */; };
+		A94AD84C2C7D02700079B8D8 /* RentStatusBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD84B2C7D02700079B8D8 /* RentStatusBundle.swift */; };
+		A94AD84E2C7D02700079B8D8 /* RentStatusLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD84D2C7D02700079B8D8 /* RentStatusLiveActivity.swift */; };
+		A94AD8502C7D02700079B8D8 /* RentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD84F2C7D02700079B8D8 /* RentStatus.swift */; };
+		A94AD8522C7D02700079B8D8 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD8512C7D02700079B8D8 /* AppIntent.swift */; };
+		A94AD8542C7D02730079B8D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94AD8532C7D02730079B8D8 /* Assets.xcassets */; };
+		A94AD8582C7D02730079B8D8 /* RentStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A94AD8472C7D02700079B8D8 /* RentStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A94AD85D2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */; };
+		A94AD85E2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */; };
+		A971FD9B2C404E3400B91A48 /* FullMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FD9A2C404E3400B91A48 /* FullMapViewController.swift */; };
+		A971FD9F2C404EE600B91A48 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FD9E2C404EE600B91A48 /* SuccessViewController.swift */; };
+		A971FDA12C404F3200B91A48 /* BikeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FDA02C404F3200B91A48 /* BikeAnnotationView.swift */; };
+		A996B28A2C7F76F4006E3996 /* InvitationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996B2892C7F76F4006E3996 /* InvitationService.swift */; };
+		A99BC4632C35A13A009E9FC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4622C35A13A009E9FC1 /* AppDelegate.swift */; };
+		A99BC4652C35A13A009E9FC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4642C35A13A009E9FC1 /* SceneDelegate.swift */; };
+		A99BC46C2C35A13D009E9FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99BC46B2C35A13D009E9FC1 /* Assets.xcassets */; };
+		A99BC47E2C35A366009E9FC1 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */; };
+		A99BC4802C35A37D009E9FC1 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */; };
+		A99BC4822C35A398009E9FC1 /* CornerRadiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */; };
+		A99BC4852C35A895009E9FC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4842C35A895009E9FC1 /* LoginViewController.swift */; };
+		A99BC4882C35A8DD009E9FC1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */; };
+		A99BC48A2C35A8FA009E9FC1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */; };
+		A99BC48C2C35A902009E9FC1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC48B2C35A902009E9FC1 /* LoginViewModel.swift */; };
+		A99BC48F2C35A91A009E9FC1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */; };
+		A99BC4912C35A934009E9FC1 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */; };
+		A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4932C35A959009E9FC1 /* RootViewController.swift */; };
+		A99BC4972C35A9B0009E9FC1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4962C35A9B0009E9FC1 /* LandingViewController.swift */; };
+		A99BC4992C35A9D7009E9FC1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4982C35A9D7009E9FC1 /* CustomButton.swift */; };
+		A99BC49B2C35A9FC009E9FC1 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC49A2C35A9FC009E9FC1 /* CustomInputView.swift */; };
+		A99BC49D2C35AA30009E9FC1 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC49C2C35AA30009E9FC1 /* AlertManager.swift */; };
+		A99BC49F2C35AA4F009E9FC1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC49E2C35AA4F009E9FC1 /* AuthService.swift */; };
+		A99BC4A72C35AE88009E9FC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A99BC4A62C35AE88009E9FC1 /* FirebaseAuth */; };
+		A99BC4A92C35AEA6009E9FC1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A99BC4A82C35AEA6009E9FC1 /* FirebaseFirestore */; };
+		A99BC4AB2C35AEE3009E9FC1 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4AA2C35AEE3009E9FC1 /* RegisterRequest.swift */; };
+		A99BC4AD2C35AF16009E9FC1 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4AC2C35AF16009E9FC1 /* LoginRequest.swift */; };
+		A99BC4AF2C35AF23009E9FC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4AE2C35AF23009E9FC1 /* User.swift */; };
+		A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */; };
+		A9A2F2B12C7B760300BD183F /* Bike3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */; };
+		A9CEAE392C3EA214003AE4A2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */; };
+		A9CEAE3B2C3EA39E003AE4A2 /* FeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */; };
+		A9CEAE3E2C3EA440003AE4A2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */; };
+		A9CEAE402C3EA519003AE4A2 /* SliderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3F2C3EA519003AE4A2 /* SliderPopUpViewController.swift */; };
+		A9FA1F082C874FF90003CECB /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA1F072C874FF90003CECB /* DashboardView.swift */; };
+		A9FA1F0A2C87745E0003CECB /* RentalHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA1F092C87745E0003CECB /* RentalHistoryView.swift */; };
+		A9FA1F0C2C8F03000003CECB /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A9FA1F0B2C8F02FF0003CECB /* Location.gpx */; };
+		A9FA1F0D2C8F03000003CECB /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A9FA1F0B2C8F02FF0003CECB /* Location.gpx */; };
+		A9FA1F0E2C8F03000003CECB /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A9FA1F0B2C8F02FF0003CECB /* Location.gpx */; };
+		A9FA1FCC2C9A0C9F0003CECB /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = A9FA1FCB2C9A0C9F0003CECB /* FacebookLogin */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94AD83C2C7BC3E50079B8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99BC4572C35A13A009E9FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94AD82A2C7BC3E30079B8D8;
+			remoteInfo = BikeAppWidgetExtension;
+		};
+		A94AD8562C7D02730079B8D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99BC4572C35A13A009E9FC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94AD8462C7D02700079B8D8;
+			remoteInfo = RentStatusExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A94AD8422C7BC3E50079B8D8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A94AD83E2C7BC3E50079B8D8 /* BikeAppWidgetExtension.appex in Embed Foundation Extensions */,
+				A94AD8582C7D02730079B8D8 /* RentStatusExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A902311F2C426DA900C4AC3C /* AddBikeFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBikeFormView.swift; sourceTree = "<group>"; };
+		A90231222C426E6A00C4AC3C /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		A90231242C426ECE00C4AC3C /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		A902312A2C42701100C4AC3C /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		A902312C2C427F2F00C4AC3C /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		A90E1FE02C3AF66300E7E1C8 /* CustomUiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUiLabel.swift; sourceTree = "<group>"; };
+		A90E1FE22C3AFCEC00E7E1C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A90E1FE62C3BFB1C00E7E1C8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A90E1FE82C3BFBA000E7E1C8 /* Bike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		A90E1FEA2C3BFBC900E7E1C8 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		A90E1FEC2C3BFBFF00E7E1C8 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		A90E1FEE2C3BFC1A00E7E1C8 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		A90E1FF02C3BFC3200E7E1C8 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		A90E1FF22C3BFC6400E7E1C8 /* SmallCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCustomButton.swift; sourceTree = "<group>"; };
+		A90E1FF42C3BFC9A00E7E1C8 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		A90E1FF62C3BFCCC00E7E1C8 /* BikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A90E1FF82C3BFDC400E7E1C8 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		A90E1FFE2C3D823800E7E1C8 /* ProfileHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHostingViewController.swift; sourceTree = "<group>"; };
+		A90E20002C3D829C00E7E1C8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A90E20022C3D83DC00E7E1C8 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		A90E20042C3D840000E7E1C8 /* RentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentHistoryCell.swift; sourceTree = "<group>"; };
+		A914DC992C4BE9B800E2A224 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		A914DCA12C4C4A9300E2A224 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		A914DCA32C4C646C00E2A224 /* JsonBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonBackup.swift; sourceTree = "<group>"; };
+		A914DCA52C4D0C3300E2A224 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		A914DCA72C4D36AE00E2A224 /* BikeRentalAppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BikeRentalAppDebug.entitlements; sourceTree = "<group>"; };
+		A914DCB02C4E783E00E2A224 /* DetectionResultValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionResultValidator.swift; sourceTree = "<group>"; };
+		A914DCB22C4E786300E2A224 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBikeFormViewModel.swift; sourceTree = "<group>"; };
+		A914DCB62C4E79B500E2A224 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		A914DCB92C4EABB200E2A224 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		A942A3AE2C3EAB3500D0833E /* BikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeService.swift; sourceTree = "<group>"; };
+		A942A3B22C3EBFC000D0833E /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		A942A3B42C3EC10300D0833E /* midPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midPoint.swift; sourceTree = "<group>"; };
+		A942CB802C4917AE0047F7A3 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		A942CB822C4917BB0047F7A3 /* ShopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMainView.swift; sourceTree = "<group>"; };
+		A942CB842C4917C80047F7A3 /* ShopHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopHostingViewController.swift; sourceTree = "<group>"; };
+		A942CB862C4919380047F7A3 /* LeaderboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewModel.swift; sourceTree = "<group>"; };
+		A942CB882C49195D0047F7A3 /* LeaderboardHostingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardHostingViewController.swift; sourceTree = "<group>"; };
+		A942CB8A2C4919860047F7A3 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		A942CB8C2C4919950047F7A3 /* UsersScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersScrollView.swift; sourceTree = "<group>"; };
+		A942CB8E2C491DE90047F7A3 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		A942CB902C491E030047F7A3 /* ProductsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListView.swift; sourceTree = "<group>"; };
+		A942CB922C491E180047F7A3 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		A942CB942C491E440047F7A3 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		A942CB992C491ED90047F7A3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBikesViewController.swift; sourceTree = "<group>"; };
+		A942CBA32C49D30A0047F7A3 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		A942CBA52C4A99920047F7A3 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		A94AD8252C7B80A70079B8D8 /* voltage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = voltage.usdz; sourceTree = "<group>"; };
+		A94AD82B2C7BC3E30079B8D8 /* BikeAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BikeAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94AD82C2C7BC3E30079B8D8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A94AD82E2C7BC3E30079B8D8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A94AD8312C7BC3E30079B8D8 /* BikeAppWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppWidgetBundle.swift; sourceTree = "<group>"; };
+		A94AD8332C7BC3E30079B8D8 /* BikeAppWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		A94AD8352C7BC3E30079B8D8 /* BikeAppWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAppWidget.swift; sourceTree = "<group>"; };
+		A94AD8372C7BC3E30079B8D8 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		A94AD8392C7BC3E50079B8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A94AD83B2C7BC3E50079B8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94AD8472C7D02700079B8D8 /* RentStatusExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RentStatusExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94AD84B2C7D02700079B8D8 /* RentStatusBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentStatusBundle.swift; sourceTree = "<group>"; };
+		A94AD84D2C7D02700079B8D8 /* RentStatusLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentStatusLiveActivity.swift; sourceTree = "<group>"; };
+		A94AD84F2C7D02700079B8D8 /* RentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentStatus.swift; sourceTree = "<group>"; };
+		A94AD8512C7D02700079B8D8 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		A94AD8532C7D02730079B8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A94AD8552C7D02730079B8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingAttributes.swift; sourceTree = "<group>"; };
+		A971FD9A2C404E3400B91A48 /* FullMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMapViewController.swift; sourceTree = "<group>"; };
+		A971FD9C2C404E9800B91A48 /* BikeRentalApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BikeRentalApp.entitlements; sourceTree = "<group>"; };
+		A971FD9E2C404EE600B91A48 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		A971FDA02C404F3200B91A48 /* BikeAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAnnotationView.swift; sourceTree = "<group>"; };
+		A996B2892C7F76F4006E3996 /* InvitationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationService.swift; sourceTree = "<group>"; };
+		A99BC45F2C35A13A009E9FC1 /* BikeRentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeRentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99BC4622C35A13A009E9FC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A99BC4642C35A13A009E9FC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A99BC46B2C35A13D009E9FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A99BC4702C35A13D009E9FC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
+		A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusExtension.swift; sourceTree = "<group>"; };
+		A99BC4842C35A895009E9FC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		A99BC48B2C35A902009E9FC1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		A99BC4932C35A959009E9FC1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A99BC4962C35A9B0009E9FC1 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		A99BC4982C35A9D7009E9FC1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A99BC49A2C35A9FC009E9FC1 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
+		A99BC49C2C35AA30009E9FC1 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		A99BC49E2C35AA4F009E9FC1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A99BC4AA2C35AEE3009E9FC1 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		A99BC4AC2C35AF16009E9FC1 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		A99BC4AE2C35AF23009E9FC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike3DViewController.swift; sourceTree = "<group>"; };
+		A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesCell.swift; sourceTree = "<group>"; };
+		A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		A9CEAE3F2C3EA519003AE4A2 /* SliderPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPopUpViewController.swift; sourceTree = "<group>"; };
+		A9FA1F072C874FF90003CECB /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A9FA1F092C87745E0003CECB /* RentalHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalHistoryView.swift; sourceTree = "<group>"; };
+		A9FA1F0B2C8F02FF0003CECB /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Location.gpx; path = BikeRentalApp/Resources/Location.gpx; sourceTree = SOURCE_ROOT; };
+		A9FA1F0F2C8F5AB50003CECB /* LocationForLive.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationForLive.gpx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94AD8282C7BC3E30079B8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94AD82F2C7BC3E30079B8D8 /* SwiftUI.framework in Frameworks */,
+				A94AD82D2C7BC3E30079B8D8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94AD8442C7D02700079B8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94AD8492C7D02700079B8D8 /* SwiftUI.framework in Frameworks */,
+				A94AD8482C7D02700079B8D8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99BC45C2C35A13A009E9FC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA1FCC2C9A0C9F0003CECB /* FacebookLogin in Frameworks */,
+				A942CBA02C49CD040047F7A3 /* SVGKit in Frameworks */,
+				A99BC4A72C35AE88009E9FC1 /* FirebaseAuth in Frameworks */,
+				A99BC4A92C35AEA6009E9FC1 /* FirebaseFirestore in Frameworks */,
+				A942CB982C491E850047F7A3 /* NetworkServicePackage in Frameworks */,
+				A942CBA22C49CD040047F7A3 /* SVGKitSwift in Frameworks */,
+				A90231272C426F9300C4AC3C /* FirebaseStorage in Frameworks */,
+				A90231292C426FA000C4AC3C /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90231212C426E0900C4AC3C /* AddBikeView */ = {
+			isa = PBXGroup;
+			children = (
+				A902311F2C426DA900C4AC3C /* AddBikeFormView.swift */,
+				A914DCA12C4C4A9300E2A224 /* AlertView.swift */,
+				A914DCB02C4E783E00E2A224 /* DetectionResultValidator.swift */,
+				A914DCB22C4E786300E2A224 /* Classifier.swift */,
+				A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */,
+			);
+			path = AddBikeView;
+			sourceTree = "<group>";
+		};
+		A914DC982C4BE9AB00E2A224 /* ScannerVC */ = {
+			isa = PBXGroup;
+			children = (
+				A914DC992C4BE9B800E2A224 /* ScannerViewController.swift */,
+				A914DCA52C4D0C3300E2A224 /* ScannerViewModel.swift */,
+			);
+			path = ScannerVC;
+			sourceTree = "<group>";
+		};
+		A914DCB82C4EAB9B00E2A224 /* LaunchScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				A914DCB92C4EABB200E2A224 /* LaunchScreenViewController.swift */,
+			);
+			path = LaunchScreenVC;
+			sourceTree = "<group>";
+		};
+		A914DCBB2C4EF62900E2A224 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				A914DCB62C4E79B500E2A224 /* MobileNetV2.mlmodel */,
+				A914DCA32C4C646C00E2A224 /* JsonBackup.swift */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		A942CB7F2C4917980047F7A3 /* ShopVC */ = {
+			isa = PBXGroup;
+			children = (
+				A942CB802C4917AE0047F7A3 /* ShopViewModel.swift */,
+				A942CB822C4917BB0047F7A3 /* ShopMainView.swift */,
+				A942CB842C4917C80047F7A3 /* ShopHostingViewController.swift */,
+				A942CB8E2C491DE90047F7A3 /* ProductCard.swift */,
+				A942CB902C491E030047F7A3 /* ProductsListView.swift */,
+				A942CB922C491E180047F7A3 /* CategoriesCell.swift */,
+				A942CB942C491E440047F7A3 /* Footer.swift */,
+				A942CB992C491ED90047F7A3 /* Product.swift */,
+			);
+			path = ShopVC;
+			sourceTree = "<group>";
+		};
+		A942CB9B2C494CB60047F7A3 /* AllBikesVC */ = {
+			isa = PBXGroup;
+			children = (
+				A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */,
+			);
+			path = AllBikesVC;
+			sourceTree = "<group>";
+		};
+		A94AD8302C7BC3E30079B8D8 /* BikeAppWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A94AD8312C7BC3E30079B8D8 /* BikeAppWidgetBundle.swift */,
+				A94AD8332C7BC3E30079B8D8 /* BikeAppWidgetLiveActivity.swift */,
+				A94AD8352C7BC3E30079B8D8 /* BikeAppWidget.swift */,
+				A94AD8372C7BC3E30079B8D8 /* AppIntent.swift */,
+				A94AD8392C7BC3E50079B8D8 /* Assets.xcassets */,
+				A94AD83B2C7BC3E50079B8D8 /* Info.plist */,
+			);
+			path = BikeAppWidget;
+			sourceTree = "<group>";
+		};
+		A94AD84A2C7D02700079B8D8 /* RentStatus */ = {
+			isa = PBXGroup;
+			children = (
+				A94AD84B2C7D02700079B8D8 /* RentStatusBundle.swift */,
+				A94AD84D2C7D02700079B8D8 /* RentStatusLiveActivity.swift */,
+				A94AD84F2C7D02700079B8D8 /* RentStatus.swift */,
+				A94AD8512C7D02700079B8D8 /* AppIntent.swift */,
+				A94AD8532C7D02730079B8D8 /* Assets.xcassets */,
+				A94AD8552C7D02730079B8D8 /* Info.plist */,
+				A9FA1F0F2C8F5AB50003CECB /* LocationForLive.gpx */,
+			);
+			path = RentStatus;
+			sourceTree = "<group>";
+		};
+		A971FD992C404E2400B91A48 /* FullMapVC */ = {
+			isa = PBXGroup;
+			children = (
+				A971FD9A2C404E3400B91A48 /* FullMapViewController.swift */,
+			);
+			path = FullMapVC;
+			sourceTree = "<group>";
+		};
+		A971FD9D2C404ED500B91A48 /* SuccessVC */ = {
+			isa = PBXGroup;
+			children = (
+				A971FD9E2C404EE600B91A48 /* SuccessViewController.swift */,
+			);
+			path = SuccessVC;
+			sourceTree = "<group>";
+		};
+		A99BC4562C35A13A009E9FC1 = {
+			isa = PBXGroup;
+			children = (
+				A99BC4612C35A13A009E9FC1 /* BikeRentalApp */,
+				A94AD8302C7BC3E30079B8D8 /* BikeAppWidget */,
+				A94AD84A2C7D02700079B8D8 /* RentStatus */,
+				A99BC4602C35A13A009E9FC1 /* Products */,
+				A99BC4A52C35AE88009E9FC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A99BC4602C35A13A009E9FC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC45F2C35A13A009E9FC1 /* BikeRentalApp.app */,
+				A94AD82B2C7BC3E30079B8D8 /* BikeAppWidgetExtension.appex */,
+				A94AD8472C7D02700079B8D8 /* RentStatusExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99BC4612C35A13A009E9FC1 /* BikeRentalApp */ = {
+			isa = PBXGroup;
+			children = (
+				A914DCBB2C4EF62900E2A224 /* Supporting */,
+				A914DCA72C4D36AE00E2A224 /* BikeRentalAppDebug.entitlements */,
+				A971FD9C2C404E9800B91A48 /* BikeRentalApp.entitlements */,
+				A90E1FE22C3AFCEC00E7E1C8 /* GoogleService-Info.plist */,
+				A99BC4762C35A277009E9FC1 /* App */,
+				A99BC4772C35A283009E9FC1 /* Scenes */,
+				A99BC47B2C35A2FB009E9FC1 /* Models */,
+				A99BC47C2C35A327009E9FC1 /* CustomClasses */,
+				A99BC4782C35A294009E9FC1 /* Resources */,
+				A99BC4792C35A2B6009E9FC1 /* Extensions */,
+				A99BC47A2C35A2F0009E9FC1 /* Services */,
+				A99BC4702C35A13D009E9FC1 /* Info.plist */,
+			);
+			path = BikeRentalApp;
+			sourceTree = "<group>";
+		};
+		A99BC4762C35A277009E9FC1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4622C35A13A009E9FC1 /* AppDelegate.swift */,
+				A99BC4642C35A13A009E9FC1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A99BC4772C35A283009E9FC1 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A914DCB82C4EAB9B00E2A224 /* LaunchScreenVC */,
+				A99BC4832C35A885009E9FC1 /* LoginVC */,
+				A99BC4862C35A8BC009E9FC1 /* RegisterVC */,
+				A99BC48D2C35A90A009E9FC1 /* ForgotPasswordVC */,
+				A99BC4952C35A99D009E9FC1 /* LandingVC */,
+				A99BC4922C35A940009E9FC1 /* RootVC */,
+				A99BC4B02C35B914009E9FC1 /* HomeVC */,
+				A971FD992C404E2400B91A48 /* FullMapVC */,
+				A9CEAE372C3EA15D003AE4A2 /* DetailsVC */,
+				A99BC4B32C35B963009E9FC1 /* LeaderBoardVC */,
+				A942CB7F2C4917980047F7A3 /* ShopVC */,
+				A99BC4B62C35B9CB009E9FC1 /* ProfileVC */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A99BC4782C35A294009E9FC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A94AD8252C7B80A70079B8D8 /* voltage.usdz */,
+				A99BC46B2C35A13D009E9FC1 /* Assets.xcassets */,
+				A9FA1F0B2C8F02FF0003CECB /* Location.gpx */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A99BC4792C35A2B6009E9FC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */,
+				A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */,
+				A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A99BC47A2C35A2F0009E9FC1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC49C2C35AA30009E9FC1 /* AlertManager.swift */,
+				A99BC49E2C35AA4F009E9FC1 /* AuthService.swift */,
+				A942A3AE2C3EAB3500D0833E /* BikeService.swift */,
+				A90231242C426ECE00C4AC3C /* FirestoreService.swift */,
+				A996B2892C7F76F4006E3996 /* InvitationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A99BC47B2C35A2FB009E9FC1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4AA2C35AEE3009E9FC1 /* RegisterRequest.swift */,
+				A99BC4AC2C35AF16009E9FC1 /* LoginRequest.swift */,
+				A99BC4AE2C35AF23009E9FC1 /* User.swift */,
+				A90E1FE82C3BFBA000E7E1C8 /* Bike.swift */,
+				A942A3B22C3EBFC000D0833E /* Booking.swift */,
+				A902312A2C42701100C4AC3C /* UserInfo.swift */,
+				A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A99BC47C2C35A327009E9FC1 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4982C35A9D7009E9FC1 /* CustomButton.swift */,
+				A90E1FF22C3BFC6400E7E1C8 /* SmallCustomButton.swift */,
+				A99BC49A2C35A9FC009E9FC1 /* CustomInputView.swift */,
+				A90E1FE02C3AF66300E7E1C8 /* CustomUiLabel.swift */,
+				A90E1FEA2C3BFBC900E7E1C8 /* Slider.swift */,
+				A90E1FEC2C3BFBFF00E7E1C8 /* CustomStackView.swift */,
+				A90E1FEE2C3BFC1A00E7E1C8 /* CustomBackgroundView.swift */,
+				A90E1FF02C3BFC3200E7E1C8 /* CustomImageView.swift */,
+				A90E1FF42C3BFC9A00E7E1C8 /* CustomCollectionView.swift */,
+				A90E1FF62C3BFCCC00E7E1C8 /* BikeCollectionViewCell.swift */,
+				A90E1FF82C3BFDC400E7E1C8 /* SliderCollectionViewCell.swift */,
+				A971FDA02C404F3200B91A48 /* BikeAnnotationView.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		A99BC4832C35A885009E9FC1 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4842C35A895009E9FC1 /* LoginViewController.swift */,
+				A99BC48B2C35A902009E9FC1 /* LoginViewModel.swift */,
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		A99BC4862C35A8BC009E9FC1 /* RegisterVC */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */,
+				A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */,
+			);
+			path = RegisterVC;
+			sourceTree = "<group>";
+		};
+		A99BC48D2C35A90A009E9FC1 /* ForgotPasswordVC */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */,
+				A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */,
+			);
+			path = ForgotPasswordVC;
+			sourceTree = "<group>";
+		};
+		A99BC4922C35A940009E9FC1 /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4932C35A959009E9FC1 /* RootViewController.swift */,
+			);
+			path = RootVC;
+			sourceTree = "<group>";
+		};
+		A99BC4952C35A99D009E9FC1 /* LandingVC */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4962C35A9B0009E9FC1 /* LandingViewController.swift */,
+			);
+			path = LandingVC;
+			sourceTree = "<group>";
+		};
+		A99BC4A52C35AE88009E9FC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94AD82C2C7BC3E30079B8D8 /* WidgetKit.framework */,
+				A94AD82E2C7BC3E30079B8D8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A99BC4B02C35B914009E9FC1 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA1F102C90AE820003CECB /* Home */,
+				A914DC982C4BE9AB00E2A224 /* ScannerVC */,
+				A942CB9B2C494CB60047F7A3 /* AllBikesVC */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		A99BC4B32C35B963009E9FC1 /* LeaderBoardVC */ = {
+			isa = PBXGroup;
+			children = (
+				A942CB862C4919380047F7A3 /* LeaderboardViewModel.swift */,
+				A942CB882C49195D0047F7A3 /* LeaderboardHostingViewController.swift */,
+				A942CB8A2C4919860047F7A3 /* LeaderboardView.swift */,
+				A942CB8C2C4919950047F7A3 /* UsersScrollView.swift */,
+			);
+			path = LeaderBoardVC;
+			sourceTree = "<group>";
+		};
+		A99BC4B62C35B9CB009E9FC1 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA1F112C90AFC80003CECB /* ProfileView */,
+				A90231212C426E0900C4AC3C /* AddBikeView */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		A9CEAE372C3EA15D003AE4A2 /* DetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				A942CBA32C49D30A0047F7A3 /* DetailsViewModel.swift */,
+				A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */,
+				A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */,
+				A9CEAE3F2C3EA519003AE4A2 /* SliderPopUpViewController.swift */,
+				A942A3B42C3EC10300D0833E /* midPoint.swift */,
+				A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */,
+				A9CEAE3C2C3EA42F003AE4A2 /* CalendarVC */,
+				A971FD9D2C404ED500B91A48 /* SuccessVC */,
+			);
+			path = DetailsVC;
+			sourceTree = "<group>";
+		};
+		A9CEAE3C2C3EA42F003AE4A2 /* CalendarVC */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */,
+				A902312C2C427F2F00C4AC3C /* CalendarViewModel.swift */,
+			);
+			path = CalendarVC;
+			sourceTree = "<group>";
+		};
+		A9FA1F102C90AE820003CECB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */,
+				A90E1FE62C3BFB1C00E7E1C8 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A9FA1F112C90AFC80003CECB /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				A90E20022C3D83DC00E7E1C8 /* GridViewCell.swift */,
+				A90E20002C3D829C00E7E1C8 /* ProfileView.swift */,
+				A90E1FFE2C3D823800E7E1C8 /* ProfileHostingViewController.swift */,
+				A90E20042C3D840000E7E1C8 /* RentHistoryCell.swift */,
+				A90231222C426E6A00C4AC3C /* ProfileViewModel.swift */,
+				A942CBA52C4A99920047F7A3 /* StarRatingView.swift */,
+				A9FA1F072C874FF90003CECB /* DashboardView.swift */,
+				A9FA1F092C87745E0003CECB /* RentalHistoryView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94AD82A2C7BC3E30079B8D8 /* BikeAppWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94AD83F2C7BC3E50079B8D8 /* Build configuration list for PBXNativeTarget "BikeAppWidgetExtension" */;
+			buildPhases = (
+				A94AD8272C7BC3E30079B8D8 /* Sources */,
+				A94AD8282C7BC3E30079B8D8 /* Frameworks */,
+				A94AD8292C7BC3E30079B8D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BikeAppWidgetExtension;
+			productName = BikeAppWidgetExtension;
+			productReference = A94AD82B2C7BC3E30079B8D8 /* BikeAppWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A94AD8462C7D02700079B8D8 /* RentStatusExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94AD8592C7D02730079B8D8 /* Build configuration list for PBXNativeTarget "RentStatusExtension" */;
+			buildPhases = (
+				A94AD8432C7D02700079B8D8 /* Sources */,
+				A94AD8442C7D02700079B8D8 /* Frameworks */,
+				A94AD8452C7D02700079B8D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RentStatusExtension;
+			productName = RentStatusExtension;
+			productReference = A94AD8472C7D02700079B8D8 /* RentStatusExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A99BC45E2C35A13A009E9FC1 /* BikeRentalApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99BC4732C35A13D009E9FC1 /* Build configuration list for PBXNativeTarget "BikeRentalApp" */;
+			buildPhases = (
+				A99BC45B2C35A13A009E9FC1 /* Sources */,
+				A99BC45C2C35A13A009E9FC1 /* Frameworks */,
+				A99BC45D2C35A13A009E9FC1 /* Resources */,
+				A94AD8422C7BC3E50079B8D8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94AD83D2C7BC3E50079B8D8 /* PBXTargetDependency */,
+				A94AD8572C7D02730079B8D8 /* PBXTargetDependency */,
+			);
+			name = BikeRentalApp;
+			packageProductDependencies = (
+				A99BC4A62C35AE88009E9FC1 /* FirebaseAuth */,
+				A99BC4A82C35AEA6009E9FC1 /* FirebaseFirestore */,
+				A90231262C426F9300C4AC3C /* FirebaseStorage */,
+				A90231282C426FA000C4AC3C /* FirebaseFirestoreSwift */,
+				A942CB972C491E850047F7A3 /* NetworkServicePackage */,
+				A942CB9F2C49CD040047F7A3 /* SVGKit */,
+				A942CBA12C49CD040047F7A3 /* SVGKitSwift */,
+				A9FA1FCB2C9A0C9F0003CECB /* FacebookLogin */,
+			);
+			productName = BikeRentalApp;
+			productReference = A99BC45F2C35A13A009E9FC1 /* BikeRentalApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A99BC4572C35A13A009E9FC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A94AD82A2C7BC3E30079B8D8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A94AD8462C7D02700079B8D8 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A99BC45E2C35A13A009E9FC1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = A99BC45A2C35A13A009E9FC1 /* Build configuration list for PBXProject "BikeRentalApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A99BC4562C35A13A009E9FC1;
+			packageReferences = (
+				A99BC4A02C35AB40009E9FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				A942CB962C491E850047F7A3 /* XCRemoteSwiftPackageReference "FetchingAPI_Package" */,
+				A942CB9E2C49CD040047F7A3 /* XCRemoteSwiftPackageReference "SVGKit" */,
+				A9FA1FCA2C9A0C9F0003CECB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = A99BC4602C35A13A009E9FC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A99BC45E2C35A13A009E9FC1 /* BikeRentalApp */,
+				A94AD82A2C7BC3E30079B8D8 /* BikeAppWidgetExtension */,
+				A94AD8462C7D02700079B8D8 /* RentStatusExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94AD8292C7BC3E30079B8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA1F0D2C8F03000003CECB /* Location.gpx in Resources */,
+				A94AD83A2C7BC3E50079B8D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94AD8452C7D02700079B8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA1F0E2C8F03000003CECB /* Location.gpx in Resources */,
+				A94AD8542C7D02730079B8D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99BC45D2C35A13A009E9FC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99BC46C2C35A13D009E9FC1 /* Assets.xcassets in Resources */,
+				A90E1FE32C3AFCEC00E7E1C8 /* GoogleService-Info.plist in Resources */,
+				A9FA1F0C2C8F03000003CECB /* Location.gpx in Resources */,
+				A94AD8262C7B80A80079B8D8 /* voltage.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94AD8272C7BC3E30079B8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94AD8322C7BC3E30079B8D8 /* BikeAppWidgetBundle.swift in Sources */,
+				A94AD8382C7BC3E30079B8D8 /* AppIntent.swift in Sources */,
+				A94AD8342C7BC3E30079B8D8 /* BikeAppWidgetLiveActivity.swift in Sources */,
+				A94AD8362C7BC3E30079B8D8 /* BikeAppWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94AD8432C7D02700079B8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94AD84C2C7D02700079B8D8 /* RentStatusBundle.swift in Sources */,
+				A94AD8522C7D02700079B8D8 /* AppIntent.swift in Sources */,
+				A94AD84E2C7D02700079B8D8 /* RentStatusLiveActivity.swift in Sources */,
+				A94AD8502C7D02700079B8D8 /* RentStatus.swift in Sources */,
+				A94AD85E2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99BC45B2C35A13A009E9FC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CEAE3E2C3EA440003AE4A2 /* CalendarViewController.swift in Sources */,
+				A90231252C426ECE00C4AC3C /* FirestoreService.swift in Sources */,
+				A99BC4912C35A934009E9FC1 /* ForgotPasswordViewModel.swift in Sources */,
+				A942CB812C4917AE0047F7A3 /* ShopViewModel.swift in Sources */,
+				A942A3AF2C3EAB3500D0833E /* BikeService.swift in Sources */,
+				A9FA1F0A2C87745E0003CECB /* RentalHistoryView.swift in Sources */,
+				A9CEAE402C3EA519003AE4A2 /* SliderPopUpViewController.swift in Sources */,
+				A9CEAE3B2C3EA39E003AE4A2 /* FeaturesCell.swift in Sources */,
+				A90E1FE12C3AF66300E7E1C8 /* CustomUiLabel.swift in Sources */,
+				A90E1FF32C3BFC6400E7E1C8 /* SmallCustomButton.swift in Sources */,
+				A99BC49D2C35AA30009E9FC1 /* AlertManager.swift in Sources */,
+				A99BC4852C35A895009E9FC1 /* LoginViewController.swift in Sources */,
+				A942CB832C4917BB0047F7A3 /* ShopMainView.swift in Sources */,
+				A90E1FFF2C3D823800E7E1C8 /* ProfileHostingViewController.swift in Sources */,
+				A99BC4AD2C35AF16009E9FC1 /* LoginRequest.swift in Sources */,
+				A9A2F2B12C7B760300BD183F /* Bike3DViewController.swift in Sources */,
+				A90E1FF12C3BFC3200E7E1C8 /* CustomImageView.swift in Sources */,
+				A90E20052C3D840000E7E1C8 /* RentHistoryCell.swift in Sources */,
+				A942A3B52C3EC10300D0833E /* midPoint.swift in Sources */,
+				A942CBA42C49D30A0047F7A3 /* DetailsViewModel.swift in Sources */,
+				A942CB892C49195D0047F7A3 /* LeaderboardHostingViewController.swift in Sources */,
+				A971FD9B2C404E3400B91A48 /* FullMapViewController.swift in Sources */,
+				A902312D2C427F2F00C4AC3C /* CalendarViewModel.swift in Sources */,
+				A942CB9A2C491ED90047F7A3 /* Product.swift in Sources */,
+				A914DCA42C4C646C00E2A224 /* JsonBackup.swift in Sources */,
+				A942CB952C491E440047F7A3 /* Footer.swift in Sources */,
+				A942CB912C491E030047F7A3 /* ProductsListView.swift in Sources */,
+				A99BC49F2C35AA4F009E9FC1 /* AuthService.swift in Sources */,
+				A942CB852C4917C80047F7A3 /* ShopHostingViewController.swift in Sources */,
+				A90E1FEB2C3BFBC900E7E1C8 /* Slider.swift in Sources */,
+				A90E1FF72C3BFCCC00E7E1C8 /* BikeCollectionViewCell.swift in Sources */,
+				A90E1FF92C3BFDC400E7E1C8 /* SliderCollectionViewCell.swift in Sources */,
+				A942A3B32C3EBFC000D0833E /* Booking.swift in Sources */,
+				A942CB8D2C4919950047F7A3 /* UsersScrollView.swift in Sources */,
+				A9CEAE392C3EA214003AE4A2 /* DetailsViewController.swift in Sources */,
+				A902312B2C42701100C4AC3C /* UserInfo.swift in Sources */,
+				A914DCA22C4C4A9300E2A224 /* AlertView.swift in Sources */,
+				A914DCA62C4D0C3300E2A224 /* ScannerViewModel.swift in Sources */,
+				A90E20012C3D829C00E7E1C8 /* ProfileView.swift in Sources */,
+				A99BC4AB2C35AEE3009E9FC1 /* RegisterRequest.swift in Sources */,
+				A914DCB72C4E79B500E2A224 /* MobileNetV2.mlmodel in Sources */,
+				A996B28A2C7F76F4006E3996 /* InvitationService.swift in Sources */,
+				A942CBA62C4A99920047F7A3 /* StarRatingView.swift in Sources */,
+				A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */,
+				A99BC48F2C35A91A009E9FC1 /* ForgotPasswordViewController.swift in Sources */,
+				A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */,
+				A914DCBA2C4EABB200E2A224 /* LaunchScreenViewController.swift in Sources */,
+				A9FA1F082C874FF90003CECB /* DashboardView.swift in Sources */,
+				A914DC9A2C4BE9B800E2A224 /* ScannerViewController.swift in Sources */,
+				A99BC4632C35A13A009E9FC1 /* AppDelegate.swift in Sources */,
+				A942CB8B2C4919860047F7A3 /* LeaderboardView.swift in Sources */,
+				A99BC49B2C35A9FC009E9FC1 /* CustomInputView.swift in Sources */,
+				A90E1FEF2C3BFC1A00E7E1C8 /* CustomBackgroundView.swift in Sources */,
+				A942CB8F2C491DE90047F7A3 /* ProductCard.swift in Sources */,
+				A942CB932C491E180047F7A3 /* CategoriesCell.swift in Sources */,
+				A90E1FE92C3BFBA000E7E1C8 /* Bike.swift in Sources */,
+				A99BC4882C35A8DD009E9FC1 /* RegisterViewController.swift in Sources */,
+				A914DCB52C4E788C00E2A224 /* AddBikeFormViewModel.swift in Sources */,
+				A99BC4822C35A398009E9FC1 /* CornerRadiusExtension.swift in Sources */,
+				A914DCB12C4E783E00E2A224 /* DetectionResultValidator.swift in Sources */,
+				A94AD85D2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */,
+				A90E1FF52C3BFC9A00E7E1C8 /* CustomCollectionView.swift in Sources */,
+				A99BC4972C35A9B0009E9FC1 /* LandingViewController.swift in Sources */,
+				A99BC4652C35A13A009E9FC1 /* SceneDelegate.swift in Sources */,
+				A90231202C426DA900C4AC3C /* AddBikeFormView.swift in Sources */,
+				A90E20032C3D83DC00E7E1C8 /* GridViewCell.swift in Sources */,
+				A99BC47E2C35A366009E9FC1 /* ImageExtension.swift in Sources */,
+				A90E1FED2C3BFBFF00E7E1C8 /* CustomStackView.swift in Sources */,
+				A99BC48A2C35A8FA009E9FC1 /* RegisterViewModel.swift in Sources */,
+				A942CB872C4919380047F7A3 /* LeaderboardViewModel.swift in Sources */,
+				A99BC48C2C35A902009E9FC1 /* LoginViewModel.swift in Sources */,
+				A90231232C426E6A00C4AC3C /* ProfileViewModel.swift in Sources */,
+				A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */,
+				A90E1FE72C3BFB1C00E7E1C8 /* HomeViewModel.swift in Sources */,
+				A99BC4802C35A37D009E9FC1 /* StackViewExtension.swift in Sources */,
+				A99BC4992C35A9D7009E9FC1 /* CustomButton.swift in Sources */,
+				A971FDA12C404F3200B91A48 /* BikeAnnotationView.swift in Sources */,
+				A942CB9D2C494CC90047F7A3 /* AllBikesViewController.swift in Sources */,
+				A971FD9F2C404EE600B91A48 /* SuccessViewController.swift in Sources */,
+				A99BC4AF2C35AF23009E9FC1 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94AD83D2C7BC3E50079B8D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94AD82A2C7BC3E30079B8D8 /* BikeAppWidgetExtension */;
+			targetProxy = A94AD83C2C7BC3E50079B8D8 /* PBXContainerItemProxy */;
+		};
+		A94AD8572C7D02730079B8D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94AD8462C7D02700079B8D8 /* RentStatusExtension */;
+			targetProxy = A94AD8562C7D02730079B8D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A94AD8402C7BC3E50079B8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQJL7PW44J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BikeAppWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BikeAppWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = t.BikeRentalApp.BikeAppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A94AD8412C7BC3E50079B8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQJL7PW44J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BikeAppWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BikeAppWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = t.BikeRentalApp.BikeAppWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A94AD85A2C7D02730079B8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQJL7PW44J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RentStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RentStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = t.BikeRentalApp.RentStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A94AD85B2C7D02730079B8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQJL7PW44J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RentStatus/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RentStatus;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = t.BikeRentalApp.RentStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A99BC4712C35A13D009E9FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A99BC4722C35A13D009E9FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A99BC4742C35A13D009E9FC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BikeRentalApp/BikeRentalAppDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQJL7PW44J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BikeRentalApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cyclo;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = t.BikeRentalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A99BC4752C35A13D009E9FC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BikeRentalApp/BikeRentalApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AQJL7PW44J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BikeRentalApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Cyclo;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = t.BikeRentalApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94AD83F2C7BC3E50079B8D8 /* Build configuration list for PBXNativeTarget "BikeAppWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94AD8402C7BC3E50079B8D8 /* Debug */,
+				A94AD8412C7BC3E50079B8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94AD8592C7D02730079B8D8 /* Build configuration list for PBXNativeTarget "RentStatusExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94AD85A2C7D02730079B8D8 /* Debug */,
+				A94AD85B2C7D02730079B8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99BC45A2C35A13A009E9FC1 /* Build configuration list for PBXProject "BikeRentalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99BC4712C35A13D009E9FC1 /* Debug */,
+				A99BC4722C35A13D009E9FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A99BC4732C35A13D009E9FC1 /* Build configuration list for PBXNativeTarget "BikeRentalApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99BC4742C35A13D009E9FC1 /* Debug */,
+				A99BC4752C35A13D009E9FC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A942CB962C491E850047F7A3 /* XCRemoteSwiftPackageReference "FetchingAPI_Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tamokakhidze/FetchingAPI_Package/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A942CB9E2C49CD040047F7A3 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		A99BC4A02C35AB40009E9FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+		A9FA1FCA2C9A0C9F0003CECB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A90231262C426F9300C4AC3C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A99BC4A02C35AB40009E9FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		A90231282C426FA000C4AC3C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A99BC4A02C35AB40009E9FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		A942CB972C491E850047F7A3 /* NetworkServicePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A942CB962C491E850047F7A3 /* XCRemoteSwiftPackageReference "FetchingAPI_Package" */;
+			productName = NetworkServicePackage;
+		};
+		A942CB9F2C49CD040047F7A3 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A942CB9E2C49CD040047F7A3 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		A942CBA12C49CD040047F7A3 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A942CB9E2C49CD040047F7A3 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
+		A99BC4A62C35AE88009E9FC1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A99BC4A02C35AB40009E9FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A99BC4A82C35AEA6009E9FC1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A99BC4A02C35AB40009E9FC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A9FA1FCB2C9A0C9F0003CECB /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9FA1FCA2C9A0C9F0003CECB /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A99BC4572C35A13A009E9FC1 /* Project object */;
+}
