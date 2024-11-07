@@ -131,13 +131,6 @@ extension ForgotPasswordViewController {
         static let alertTitle = "Password reset"
     }
     
-    enum Colors {
-        static let titleTextColor = UIColor.black
-        static let backgroundColor = UIColor.mainBackground
-        static let borderColor = UIColor.clear.cgColor
-        static let activeBorderColor = UIColor.systemBlue.cgColor
-    }
-    
     enum Sizing {
         static let titleFontSize: CGFloat = 24
         static let logoSize: CGFloat = 200
