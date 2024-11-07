@@ -15,28 +15,29 @@ class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
         setupTabBar()
-        navigationItem.hidesBackButton = true
     }
     
     // MARK: - Ui setup
-
+    
+    private func setupView() {
+        navigationItem.hidesBackButton = true
+    }
+    
     private func setupTabBar() {
         let tabBarController = UITabBarController()
         
-        let HomeVC = HomeViewController()
-        let LeaderboardVC = LeaderboardHostingVC()
-        let ShopVC = ShopHostingViewController()
-        let ProfileVC = ProfileHostingController()
+        let homeVC = HomeViewController()
+        let leaderboardVC = LeaderboardHostingVC()
+        let shopVC = ShopHostingViewController()
+        let profileVC = ProfileHostingController()
         
-        tabBarController.viewControllers = [HomeVC, LeaderboardVC, ShopVC, ProfileVC]
+        tabBarController.viewControllers = [homeVC, leaderboardVC, shopVC, profileVC]
         
-        HomeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "homeImage"), tag: 1)
-        LeaderboardVC.tabBarItem = UITabBarItem(title: "Leaderboard", image: UIImage(systemName: "trophy"), tag: 2)
-        ShopVC.tabBarItem = UITabBarItem(title: "Shop", image: UIImage(named: "shopTabBarIcon"), tag: 4)
-        ProfileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person"), tag: 3)
-    
-        if let tabBar = tabBarController.tabBar as? UITabBar{
+        configureTabBarItems(for: homeVC, leaderboardVC: leaderboardVC, shopVC: shopVC, profileVC: profileVC)
+        
+        if let tabBar = tabBarController.tabBar as? UITabBar {
             tabBar.barTintColor = .white
             tabBar.isTranslucent = true
             tabBar.backgroundColor = .clear
@@ -48,5 +49,24 @@ class RootViewController: UIViewController {
         addChild(tabBarController)
         view.addSubview(tabBarController.view)
         tabBarController.didMove(toParent: self)
+    }
+    
+    private func configureTabBarItems(for homeVC: UIViewController, leaderboardVC: UIViewController, shopVC: UIViewController, profileVC: UIViewController) {
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: .home, tag: 1)
+        leaderboardVC.tabBarItem = UITabBarItem(title: "Leaderboard", image: Images.trophy, tag: 2)
+        shopVC.tabBarItem = UITabBarItem(title: "Shop", image: .shopTabBarIcon, tag: 4)
+        profileVC.tabBarItem = UITabBarItem(title: "profile", image: Images.profile, tag: 3)
+    }
+    
+}
+
+extension RootViewController {
+    enum Images {
+        static let trophy = UIImage(systemName: "trophy")
+        static let profile = UIImage(systemName: "person")
+    }
+    
+    enum Titles {
+        static let home = "Home"
     }
 }

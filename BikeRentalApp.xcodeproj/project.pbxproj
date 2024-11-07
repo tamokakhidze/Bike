@@ -89,7 +89,6 @@
 		A99BC4802C35A37D009E9FC1 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */; };
 		A99BC4822C35A398009E9FC1 /* CornerRadiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */; };
 		A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4932C35A959009E9FC1 /* RootViewController.swift */; };
-		A99BC4972C35A9B0009E9FC1 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4962C35A9B0009E9FC1 /* LandingViewController.swift */; };
 		A99BC4992C35A9D7009E9FC1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4982C35A9D7009E9FC1 /* CustomButton.swift */; };
 		A99BC49B2C35A9FC009E9FC1 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC49A2C35A9FC009E9FC1 /* CustomInputView.swift */; };
 		A99BC49D2C35AA30009E9FC1 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC49C2C35AA30009E9FC1 /* AlertManager.swift */; };
@@ -227,7 +226,6 @@
 		A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusExtension.swift; sourceTree = "<group>"; };
 		A99BC4932C35A959009E9FC1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		A99BC4962C35A9B0009E9FC1 /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		A99BC4982C35A9D7009E9FC1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A99BC49A2C35A9FC009E9FC1 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		A99BC49C2C35AA30009E9FC1 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
@@ -256,6 +254,7 @@
 		A9C717532CDCF87500E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 		A9C717542CDCFD7F00E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717552CDCFD9600E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
+		A9C717562CDD06B300E1CE95 /* LandingViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LandingViewController; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,7 +454,7 @@
 				A99BC4832C35A885009E9FC1 /* LoginPage */,
 				A99BC4862C35A8BC009E9FC1 /* RegisterPage */,
 				A99BC48D2C35A90A009E9FC1 /* ForgotPasswordPage */,
-				A99BC4952C35A99D009E9FC1 /* LandingVC */,
+				A99BC4952C35A99D009E9FC1 /* LandingPage */,
 				A99BC4922C35A940009E9FC1 /* RootVC */,
 				A99BC4B02C35B914009E9FC1 /* HomeVC */,
 				A971FD992C404E2400B91A48 /* FullMapVC */,
@@ -568,12 +567,12 @@
 			path = RootVC;
 			sourceTree = "<group>";
 		};
-		A99BC4952C35A99D009E9FC1 /* LandingVC */ = {
+		A99BC4952C35A99D009E9FC1 /* LandingPage */ = {
 			isa = PBXGroup;
 			children = (
-				A99BC4962C35A9B0009E9FC1 /* LandingViewController.swift */,
+				A9C717562CDD06B300E1CE95 /* LandingViewController */,
 			);
-			path = LandingVC;
+			path = LandingPage;
 			sourceTree = "<group>";
 		};
 		A99BC4A52C35AE88009E9FC1 /* Frameworks */ = {
@@ -723,6 +722,7 @@
 				A9C717532CDCF87500E1CE95 /* ViewController */,
 				A9C717542CDCFD7F00E1CE95 /* ViewModel */,
 				A9C717552CDCFD9600E1CE95 /* ViewController */,
+				A9C717562CDD06B300E1CE95 /* LandingViewController */,
 			);
 			name = BikeRentalApp;
 			packageProductDependencies = (
@@ -904,7 +904,6 @@
 				A914DCB12C4E783E00E2A224 /* DetectionResultValidator.swift in Sources */,
 				A94AD85D2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */,
 				A90E1FF52C3BFC9A00E7E1C8 /* CustomCollectionView.swift in Sources */,
-				A99BC4972C35A9B0009E9FC1 /* LandingViewController.swift in Sources */,
 				A99BC4652C35A13A009E9FC1 /* SceneDelegate.swift in Sources */,
 				A90231202C426DA900C4AC3C /* AddBikeFormView.swift in Sources */,
 				A90E20032C3D83DC00E7E1C8 /* GridViewCell.swift in Sources */,
