@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,6 @@
 		A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB22C4E786300E2A224 /* Classifier.swift */; };
 		A914DCB52C4E788C00E2A224 /* AddBikeFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */; };
 		A914DCB72C4E79B500E2A224 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB62C4E79B500E2A224 /* MobileNetV2.mlmodel */; };
-		A914DCBA2C4EABB200E2A224 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB92C4EABB200E2A224 /* LaunchScreenViewController.swift */; };
 		A942A3AF2C3EAB3500D0833E /* BikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942A3AE2C3EAB3500D0833E /* BikeService.swift */; };
 		A942A3B32C3EBFC000D0833E /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942A3B22C3EBFC000D0833E /* Booking.swift */; };
 		A942A3B52C3EC10300D0833E /* midPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942A3B42C3EC10300D0833E /* midPoint.swift */; };
@@ -89,10 +88,8 @@
 		A99BC47E2C35A366009E9FC1 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */; };
 		A99BC4802C35A37D009E9FC1 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */; };
 		A99BC4822C35A398009E9FC1 /* CornerRadiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */; };
-		A99BC4852C35A895009E9FC1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4842C35A895009E9FC1 /* LoginViewController.swift */; };
 		A99BC4882C35A8DD009E9FC1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */; };
 		A99BC48A2C35A8FA009E9FC1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */; };
-		A99BC48C2C35A902009E9FC1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC48B2C35A902009E9FC1 /* LoginViewModel.swift */; };
 		A99BC48F2C35A91A009E9FC1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */; };
 		A99BC4912C35A934009E9FC1 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */; };
 		A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4932C35A959009E9FC1 /* RootViewController.swift */; };
@@ -184,7 +181,6 @@
 		A914DCB22C4E786300E2A224 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBikeFormViewModel.swift; sourceTree = "<group>"; };
 		A914DCB62C4E79B500E2A224 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
-		A914DCB92C4EABB200E2A224 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		A942A3AE2C3EAB3500D0833E /* BikeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeService.swift; sourceTree = "<group>"; };
 		A942A3B22C3EBFC000D0833E /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		A942A3B42C3EC10300D0833E /* midPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = midPoint.swift; sourceTree = "<group>"; };
@@ -234,10 +230,8 @@
 		A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusExtension.swift; sourceTree = "<group>"; };
-		A99BC4842C35A895009E9FC1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
-		A99BC48B2C35A902009E9FC1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		A99BC4932C35A959009E9FC1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +255,12 @@
 		A9FA1F0B2C8F02FF0003CECB /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Location.gpx; path = BikeRentalApp/Resources/Location.gpx; sourceTree = SOURCE_ROOT; };
 		A9FA1F0F2C8F5AB50003CECB /* LocationForLive.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationForLive.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A9C7174F2CDCED3600E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+		A9C717502CDCEE1D00E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
+		A9C717512CDCEF0800E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A94AD8282C7BC3E30079B8D8 /* Frameworks */ = {
@@ -320,12 +320,12 @@
 			path = ScannerVC;
 			sourceTree = "<group>";
 		};
-		A914DCB82C4EAB9B00E2A224 /* LaunchScreenVC */ = {
+		A914DCB82C4EAB9B00E2A224 /* LaunchPage */ = {
 			isa = PBXGroup;
 			children = (
-				A914DCB92C4EABB200E2A224 /* LaunchScreenViewController.swift */,
+				A9C717512CDCEF0800E1CE95 /* ViewController */,
 			);
-			path = LaunchScreenVC;
+			path = LaunchPage;
 			sourceTree = "<group>";
 		};
 		A914DCBB2C4EF62900E2A224 /* Supporting */ = {
@@ -455,8 +455,8 @@
 		A99BC4772C35A283009E9FC1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A914DCB82C4EAB9B00E2A224 /* LaunchScreenVC */,
-				A99BC4832C35A885009E9FC1 /* LoginVC */,
+				A914DCB82C4EAB9B00E2A224 /* LaunchPage */,
+				A99BC4832C35A885009E9FC1 /* LoginPage */,
 				A99BC4862C35A8BC009E9FC1 /* RegisterVC */,
 				A99BC48D2C35A90A009E9FC1 /* ForgotPasswordVC */,
 				A99BC4952C35A99D009E9FC1 /* LandingVC */,
@@ -537,13 +537,13 @@
 			path = CustomClasses;
 			sourceTree = "<group>";
 		};
-		A99BC4832C35A885009E9FC1 /* LoginVC */ = {
+		A99BC4832C35A885009E9FC1 /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
-				A99BC4842C35A895009E9FC1 /* LoginViewController.swift */,
-				A99BC48B2C35A902009E9FC1 /* LoginViewModel.swift */,
+				A9C717502CDCEE1D00E1CE95 /* ViewController */,
+				A9C7174F2CDCED3600E1CE95 /* ViewModel */,
 			);
-			path = LoginVC;
+			path = LoginPage;
 			sourceTree = "<group>";
 		};
 		A99BC4862C35A8BC009E9FC1 /* RegisterVC */ = {
@@ -719,6 +719,11 @@
 				A94AD83D2C7BC3E50079B8D8 /* PBXTargetDependency */,
 				A94AD8572C7D02730079B8D8 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				A9C7174F2CDCED3600E1CE95 /* ViewModel */,
+				A9C717502CDCEE1D00E1CE95 /* ViewController */,
+				A9C717512CDCEF0800E1CE95 /* ViewController */,
+			);
 			name = BikeRentalApp;
 			packageProductDependencies = (
 				A99BC4A62C35AE88009E9FC1 /* FirebaseAuth */,
@@ -852,7 +857,6 @@
 				A90E1FE12C3AF66300E7E1C8 /* CustomUiLabel.swift in Sources */,
 				A90E1FF32C3BFC6400E7E1C8 /* SmallCustomButton.swift in Sources */,
 				A99BC49D2C35AA30009E9FC1 /* AlertManager.swift in Sources */,
-				A99BC4852C35A895009E9FC1 /* LoginViewController.swift in Sources */,
 				A942CB832C4917BB0047F7A3 /* ShopMainView.swift in Sources */,
 				A90E1FFF2C3D823800E7E1C8 /* ProfileHostingViewController.swift in Sources */,
 				A99BC4AD2C35AF16009E9FC1 /* LoginRequest.swift in Sources */,
@@ -888,7 +892,6 @@
 				A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */,
 				A99BC48F2C35A91A009E9FC1 /* ForgotPasswordViewController.swift in Sources */,
 				A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */,
-				A914DCBA2C4EABB200E2A224 /* LaunchScreenViewController.swift in Sources */,
 				A9FA1F082C874FF90003CECB /* DashboardView.swift in Sources */,
 				A914DC9A2C4BE9B800E2A224 /* ScannerViewController.swift in Sources */,
 				A99BC4632C35A13A009E9FC1 /* AppDelegate.swift in Sources */,
@@ -912,7 +915,6 @@
 				A90E1FED2C3BFBFF00E7E1C8 /* CustomStackView.swift in Sources */,
 				A99BC48A2C35A8FA009E9FC1 /* RegisterViewModel.swift in Sources */,
 				A942CB872C4919380047F7A3 /* LeaderboardViewModel.swift in Sources */,
-				A99BC48C2C35A902009E9FC1 /* LoginViewModel.swift in Sources */,
 				A90231232C426E6A00C4AC3C /* ProfileViewModel.swift in Sources */,
 				A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */,
 				A90E1FE72C3BFB1C00E7E1C8 /* HomeViewModel.swift in Sources */,

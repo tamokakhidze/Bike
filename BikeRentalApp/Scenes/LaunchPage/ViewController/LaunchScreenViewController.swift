@@ -84,7 +84,7 @@ final class LaunchScreenViewController: UIViewController {
             rearWheelImageView.heightAnchor.constraint(equalToConstant: LayoutConstants.wheelHeight),
             
             roadImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            roadImageView.topAnchor.constraint(equalTo: bikeImageView.bottomAnchor, constant: -LayoutConstants.roadYOffset),
+            roadImageView.topAnchor.constraint(equalTo: bikeImageView.bottomAnchor, constant: LayoutConstants.roadYOffset),
             roadImageView.widthAnchor.constraint(equalToConstant: LayoutConstants.roadWidth),
             roadImageView.heightAnchor.constraint(equalToConstant: LayoutConstants.roadHeight)
         ])

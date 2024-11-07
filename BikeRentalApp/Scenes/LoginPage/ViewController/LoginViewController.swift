@@ -219,10 +219,6 @@ extension LoginViewController: LoginViewModelDelegate {
     }
 }
 
-#Preview {
-    LoginViewController()
-}
-
 private extension LoginViewController {
     enum Sizing {
         static let stackViewSpacing: CGFloat = 20
@@ -237,5 +233,9 @@ private extension LoginViewController {
         static let createAccButtonTitle = "Don't have an account? Sign up now."
         static let forgotPasswordTitle = "Forgot password"
     }
-    
 }
+
+#Preview {
+    LoginViewController()
+}
+
