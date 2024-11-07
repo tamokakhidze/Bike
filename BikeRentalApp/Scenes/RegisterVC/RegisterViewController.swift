@@ -9,30 +9,48 @@ import UIKit
 import FirebaseAuth
 
 final class RegisterViewController: UIViewController {
-        
+    
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 20
+        stackView.spacing = Sizing.stackViewSpacing
         stackView.alignment = .center
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
-    }()    
+    }()
     
     private lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(resource: .logo)
+        imageView.image = .logo
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    private lazy var titleLabel = CustomUiLabel(fontSize: 24, text: "Create an account", tintColor: .black, textAlignment: .center)
+    private lazy var titleLabel = CustomUiLabel(
+        fontSize: Sizing.titleFontSize,
+        text: Titles.createAccountText,
+        tintColor: .black,
+        textAlignment: .center
+    )
+    
+    private var signUpButton = CustomButton(
+        title: Titles.signUp,
+        hasBackground: true,
+        width: Sizing.buttonWidth
+    )
+    
+    private var signInButton = CustomButton(
+        title: Titles.signIn,
+        hasBackground: false,
+        width: Sizing.buttonWidth
+    )
+    
     private var usernameField = CustomInputView(inputType: .Username)
+    
     private var emailTextField = CustomInputView(inputType: .Email)
+    
     private var passwordTextField = CustomInputView(inputType: .Password)
-    private var signUpButton = CustomButton(title: "Sign Up", hasBackground: true, width: 350)
-    private var signInButton = CustomButton(title: "Already have an account? Sign in", hasBackground: false, width: 350)
+    
     private var viewModel = RegisterViewModel()
     
     override func viewDidLoad() {
@@ -44,18 +62,23 @@ final class RegisterViewController: UIViewController {
     }
     
     private func setupUi() {
-        view.backgroundColor = .mainBackground
-        configureMainStackView()
-        navigationItem.hidesBackButton = true
-        
+        setupView()
+        setupViewHierarchy()
+        setConstraints()
+        setupStackView()
         configureTextField(emailTextField)
         configureTextField(passwordTextField)
         configureTextField(usernameField)
     }
     
+    private func setupView() {
+        view.backgroundColor = .mainBackground
+        navigationItem.hidesBackButton = true
+    }
+    
     private func configureTextField(_ textField: UITextField) {
-        textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor.clear.cgColor
+        textField.layer.borderWidth = Sizing.textFieldBorderWidth
+        textField.layer.borderColor = UIColor.textfieldClearBorder.cgColor
     }
     
     private func addTargets() {
@@ -70,9 +93,11 @@ final class RegisterViewController: UIViewController {
         viewModel.delegate = self
     }
     
-    private func configureMainStackView() {
+    private func setupViewHierarchy() {
         view.addSubview(stackView)
-        
+    }
+    
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -82,7 +107,9 @@ final class RegisterViewController: UIViewController {
             logoImageView.widthAnchor.constraint(equalToConstant: 200),
             logoImageView.heightAnchor.constraint(equalToConstant: 200),
         ])
-
+    }
+    
+    private func setupStackView() {
         stackView.addArrangedSubviews(
             logoImageView,
             titleLabel,
@@ -116,11 +143,11 @@ final class RegisterViewController: UIViewController {
 
 extension RegisterViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderColor = UIColor.systemBlue.cgColor
+        textField.layer.borderColor = UIColor.textfieldBlueBorder.cgColor
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textField.layer.borderColor = UIColor.clear.cgColor
+        textField.layer.borderColor = UIColor.textfieldClearBorder.cgColor
     }
 }
 
@@ -137,5 +164,29 @@ extension RegisterViewController: RegisterViewModelDelegate {
                 AlertManager.showAlert(message: "Registration failed.", on: self, title: "Registration error")
             }
         }
+    }
+}
+
+extension RegisterViewController {
+    enum Titles {
+        static let createAccountText = "Create an account"
+        static let signUp = "Sign Up"
+        static let signIn = "Already have an account? Sign in"
+    }
+    
+    enum Colors {
+        static let titleTextColor = UIColor.black
+        static let backgroundColor = UIColor.mainBackground
+        static let borderColor = UIColor.clear.cgColor
+        static let activeBorderColor = UIColor.systemBlue.cgColor
+    }
+    
+    enum Sizing {
+        static let titleFontSize: CGFloat = 24
+        static let logoSize: CGFloat = 200
+        static let stackViewSpacing: CGFloat = 20
+        static let stackViewTopPadding: CGFloat = 100
+        static let buttonWidth: CGFloat = 350
+        static let textFieldBorderWidth: CGFloat = 1
     }
 }
