@@ -18,10 +18,12 @@ final class LoginViewController: UIViewController {
     
     private var viewModel = LoginViewModel()
 
+    // MARK: - UI Components
+    
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 20
+        stackView.spacing = Sizing.stackViewSpacing
         stackView.alignment = .center
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
@@ -29,36 +31,38 @@ final class LoginViewController: UIViewController {
     
     private lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(resource: .logo)
+        imageView.image = .logo
         imageView.contentMode = .scaleAspectFit
-        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
     private let loginLabel = CustomUiLabel(
-        fontSize: 25,
-        text: "Nice to see you again!",
-        tintColor: .black,
-        textAlignment: .left,
-        fontWeight: .semibold)
+        fontSize: Sizing.loginLabelFontSize,
+        text: Titles.mainTitleText,
+        tintColor: .primaryText,
+        fontWeight: .semibold
+    )
     
     private let emailTextField = CustomInputView(inputType: .Email)
+    
     private let passwordTextField = CustomInputView(inputType: .Password)
     
     private let loginButton = CustomButton(
-        title: "Sign in",
+        title: Titles.loginButtonTitle,
         hasBackground: true,
-        width: 350)
+        width: Sizing.buttonWidth)
     
     private let createAccount = CustomButton(
-        title: "Don't have an account? Sign up now.",
+        title: Titles.createAccButtonTitle,
         hasBackground: false,
-        width: 350)
+        width: Sizing.buttonWidth
+    )
     
     private let forgotPassword = CustomButton(
-        title: "Forgot password",
+        title: Titles.forgotPasswordTitle,
         hasBackground: false,
-        width: 350)
+        width: Sizing.buttonWidth
+    )
     
     // MARK: - Lifecycle
     
@@ -74,9 +78,13 @@ final class LoginViewController: UIViewController {
     // MARK: - Setup methods
     
     private func setupUi() {
+        setupView()
+        configureTextFields()
+    }
+    
+    private func setupView() {
         view.backgroundColor = .mainBackground
         navigationItem.hidesBackButton = true
-        configureTextFields()
     }
     
     private func configureTextFields() {
@@ -85,8 +93,8 @@ final class LoginViewController: UIViewController {
     }
     
     private func configureTextField(_ textField: UITextField) {
-        textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor.clear.cgColor
+        textField.layer.borderWidth = Sizing.textFieldBorderWidth
+        textField.layer.borderColor = UIColor.textfieldClearBorder.cgColor
     }
     
     private func setDelegates() {
@@ -144,11 +152,13 @@ final class LoginViewController: UIViewController {
     }
     
     @objc private func didTapCreateAccount() {
-        navigationController?.pushViewController(RegisterViewController(), animated: false)
+        let registerVC = RegisterViewController()
+        navigationController?.pushViewController(registerVC, animated: false)
     }
     
     @objc private func didTapForgotPassword() {
-        navigationController?.pushViewController(ForgotPasswordViewController(), animated: false)
+        let forgotPassVC = ForgotPasswordViewController()
+        navigationController?.pushViewController(forgotPassVC, animated: false)
     }
     
     @objc private func didTapSignIn() {
@@ -161,11 +171,11 @@ final class LoginViewController: UIViewController {
 extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderColor = UIColor.systemBlue.cgColor
+        textField.layer.borderColor = UIColor.textfieldBlueBorder.cgColor
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        textField.layer.borderColor = UIColor.clear.cgColor
+        textField.layer.borderColor = UIColor.textfieldClearBorder.cgColor
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -211,4 +221,21 @@ extension LoginViewController: LoginViewModelDelegate {
 
 #Preview {
     LoginViewController()
+}
+
+private extension LoginViewController {
+    enum Sizing {
+        static let stackViewSpacing: CGFloat = 20
+        static let loginLabelFontSize: CGFloat = 25
+        static let buttonWidth: CGFloat = 350
+        static let textFieldBorderWidth: CGFloat = 1
+    }
+    
+    enum Titles {
+        static let mainTitleText = "Nice to see you again!"
+        static let loginButtonTitle = "Sign in"
+        static let createAccButtonTitle = "Don't have an account? Sign up now."
+        static let forgotPasswordTitle = "Forgot password"
+    }
+    
 }
