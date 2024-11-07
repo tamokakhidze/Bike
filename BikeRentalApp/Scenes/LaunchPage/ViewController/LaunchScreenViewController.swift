@@ -120,7 +120,9 @@ final class LaunchScreenViewController: UIViewController {
     }
 }
 
-private extension LaunchScreenViewController {
+// MARK: - Constants extension
+
+extension LaunchScreenViewController {
     enum LayoutConstants {
         static let bikeImageWidth: CGFloat = 110
         static let bikeImageHeight: CGFloat = 100

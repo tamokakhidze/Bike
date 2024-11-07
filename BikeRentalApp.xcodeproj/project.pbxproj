@@ -88,8 +88,6 @@
 		A99BC47E2C35A366009E9FC1 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */; };
 		A99BC4802C35A37D009E9FC1 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */; };
 		A99BC4822C35A398009E9FC1 /* CornerRadiusExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */; };
-		A99BC4882C35A8DD009E9FC1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */; };
-		A99BC48A2C35A8FA009E9FC1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */; };
 		A99BC48F2C35A91A009E9FC1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */; };
 		A99BC4912C35A934009E9FC1 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */; };
 		A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4932C35A959009E9FC1 /* RootViewController.swift */; };
@@ -230,8 +228,6 @@
 		A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusExtension.swift; sourceTree = "<group>"; };
-		A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		A99BC48E2C35A91A009E9FC1 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		A99BC4902C35A933009E9FC1 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		A99BC4932C35A959009E9FC1 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +256,8 @@
 		A9C7174F2CDCED3600E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717502CDCEE1D00E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 		A9C717512CDCEF0800E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
+		A9C717522CDCF86800E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+		A9C717532CDCF87500E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,7 +455,7 @@
 			children = (
 				A914DCB82C4EAB9B00E2A224 /* LaunchPage */,
 				A99BC4832C35A885009E9FC1 /* LoginPage */,
-				A99BC4862C35A8BC009E9FC1 /* RegisterVC */,
+				A99BC4862C35A8BC009E9FC1 /* RegisterPage */,
 				A99BC48D2C35A90A009E9FC1 /* ForgotPasswordVC */,
 				A99BC4952C35A99D009E9FC1 /* LandingVC */,
 				A99BC4922C35A940009E9FC1 /* RootVC */,
@@ -546,13 +544,13 @@
 			path = LoginPage;
 			sourceTree = "<group>";
 		};
-		A99BC4862C35A8BC009E9FC1 /* RegisterVC */ = {
+		A99BC4862C35A8BC009E9FC1 /* RegisterPage */ = {
 			isa = PBXGroup;
 			children = (
-				A99BC4872C35A8DD009E9FC1 /* RegisterViewController.swift */,
-				A99BC4892C35A8FA009E9FC1 /* RegisterViewModel.swift */,
+				A9C717532CDCF87500E1CE95 /* ViewController */,
+				A9C717522CDCF86800E1CE95 /* ViewModel */,
 			);
-			path = RegisterVC;
+			path = RegisterPage;
 			sourceTree = "<group>";
 		};
 		A99BC48D2C35A90A009E9FC1 /* ForgotPasswordVC */ = {
@@ -723,6 +721,8 @@
 				A9C7174F2CDCED3600E1CE95 /* ViewModel */,
 				A9C717502CDCEE1D00E1CE95 /* ViewController */,
 				A9C717512CDCEF0800E1CE95 /* ViewController */,
+				A9C717522CDCF86800E1CE95 /* ViewModel */,
+				A9C717532CDCF87500E1CE95 /* ViewController */,
 			);
 			name = BikeRentalApp;
 			packageProductDependencies = (
@@ -901,7 +901,6 @@
 				A942CB8F2C491DE90047F7A3 /* ProductCard.swift in Sources */,
 				A942CB932C491E180047F7A3 /* CategoriesCell.swift in Sources */,
 				A90E1FE92C3BFBA000E7E1C8 /* Bike.swift in Sources */,
-				A99BC4882C35A8DD009E9FC1 /* RegisterViewController.swift in Sources */,
 				A914DCB52C4E788C00E2A224 /* AddBikeFormViewModel.swift in Sources */,
 				A99BC4822C35A398009E9FC1 /* CornerRadiusExtension.swift in Sources */,
 				A914DCB12C4E783E00E2A224 /* DetectionResultValidator.swift in Sources */,
@@ -913,7 +912,6 @@
 				A90E20032C3D83DC00E7E1C8 /* GridViewCell.swift in Sources */,
 				A99BC47E2C35A366009E9FC1 /* ImageExtension.swift in Sources */,
 				A90E1FED2C3BFBFF00E7E1C8 /* CustomStackView.swift in Sources */,
-				A99BC48A2C35A8FA009E9FC1 /* RegisterViewModel.swift in Sources */,
 				A942CB872C4919380047F7A3 /* LeaderboardViewModel.swift in Sources */,
 				A90231232C426E6A00C4AC3C /* ProfileViewModel.swift in Sources */,
 				A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */,

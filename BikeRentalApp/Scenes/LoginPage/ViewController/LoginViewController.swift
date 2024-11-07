@@ -75,7 +75,7 @@ final class LoginViewController: UIViewController {
         addTapGestureToDismissKeyboard()
     }
     
-    // MARK: - Setup methods
+    // MARK: - UI Setup
     
     private func setupUi() {
         setupView()
@@ -219,7 +219,9 @@ extension LoginViewController: LoginViewModelDelegate {
     }
 }
 
-private extension LoginViewController {
+// MARK: - Constants extension
+
+extension LoginViewController {
     enum Sizing {
         static let stackViewSpacing: CGFloat = 20
         static let loginLabelFontSize: CGFloat = 25

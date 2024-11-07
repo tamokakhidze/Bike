@@ -8,8 +8,12 @@
 import UIKit
 import FirebaseAuth
 
+// MARK: - RegisterViewController
+
 final class RegisterViewController: UIViewController {
     
+    // MARK: - UI components
+
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -51,8 +55,12 @@ final class RegisterViewController: UIViewController {
     
     private var passwordTextField = CustomInputView(inputType: .Password)
     
+    // MARK: - Properties
+
     private var viewModel = RegisterViewModel()
     
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUi()
@@ -61,6 +69,8 @@ final class RegisterViewController: UIViewController {
         addTapGestureToDismissKeyboard()
     }
     
+    // MARK: - UI Setup
+
     private func setupUi() {
         setupView()
         setupViewHierarchy()
@@ -122,11 +132,15 @@ final class RegisterViewController: UIViewController {
         )
     }
     
+    // MARK: - Gesture recognizers
+
     private func addTapGestureToDismissKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
     }
     
+    // MARK: - Actions
+
     @objc private func dismissKeyboard() {
         view.endEditing(true)
     }
@@ -141,6 +155,8 @@ final class RegisterViewController: UIViewController {
     
 }
 
+// MARK: - UITextFieldDelegate
+
 extension RegisterViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.layer.borderColor = UIColor.textfieldBlueBorder.cgColor
@@ -150,6 +166,7 @@ extension RegisterViewController: UITextFieldDelegate {
         textField.layer.borderColor = UIColor.textfieldClearBorder.cgColor
     }
 }
+// MARK: - RegisterViewModelDelegate
 
 extension RegisterViewController: RegisterViewModelDelegate {
     func registrationCompleted(success: Bool, error: Error?) {
@@ -166,6 +183,8 @@ extension RegisterViewController: RegisterViewModelDelegate {
         }
     }
 }
+
+// MARK: - Constants extension
 
 extension RegisterViewController {
     enum Titles {
