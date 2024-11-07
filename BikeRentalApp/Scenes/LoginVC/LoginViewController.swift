@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import MapKit
 import CoreLocation
+
 // MARK: - LoginViewController
 
 final class LoginViewController: UIViewController {
@@ -34,12 +35,30 @@ final class LoginViewController: UIViewController {
         return imageView
     }()
     
-    private let loginLabel = CustomUiLabel(fontSize: 25, text: "Nice to see you again!", tintColor: .black, textAlignment: .left, fontWeight: .semibold)
+    private let loginLabel = CustomUiLabel(
+        fontSize: 25,
+        text: "Nice to see you again!",
+        tintColor: .black,
+        textAlignment: .left,
+        fontWeight: .semibold)
+    
     private let emailTextField = CustomInputView(inputType: .Email)
     private let passwordTextField = CustomInputView(inputType: .Password)
-    private let loginButton = CustomButton(title: "Sign in", hasBackground: true, width: 350)
-    private let createAccount = CustomButton(title: "Don't have an account? Sign up now.", hasBackground: false, width: 350)
-    private let forgotPassword = CustomButton(title: "Forgot password", hasBackground: false, width: 350)
+    
+    private let loginButton = CustomButton(
+        title: "Sign in",
+        hasBackground: true,
+        width: 350)
+    
+    private let createAccount = CustomButton(
+        title: "Don't have an account? Sign up now.",
+        hasBackground: false,
+        width: 350)
+    
+    private let forgotPassword = CustomButton(
+        title: "Forgot password",
+        hasBackground: false,
+        width: 350)
     
     // MARK: - Lifecycle
     
@@ -111,12 +130,14 @@ final class LoginViewController: UIViewController {
         ])
     }
     
-    // MARK: - Actions
+    // MARK: - Gesture Recognizers
     
     private func addTapGestureToDismissKeyboard() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tapGesture)
     }
+    
+    // MARK: - Actions
     
     @objc private func dismissKeyboard() {
         view.endEditing(true)

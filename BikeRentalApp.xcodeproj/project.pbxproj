@@ -108,6 +108,7 @@
 		A99BC4AF2C35AF23009E9FC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4AE2C35AF23009E9FC1 /* User.swift */; };
 		A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */; };
 		A9A2F2B12C7B760300BD183F /* Bike3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */; };
+		A9C7174C2CDCD8BB00E1CE95 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C7174B2CDCD8BB00E1CE95 /* UIViewExtensions.swift */; };
 		A9CEAE392C3EA214003AE4A2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */; };
 		A9CEAE3B2C3EA39E003AE4A2 /* FeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */; };
 		A9CEAE3E2C3EA440003AE4A2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */; };
@@ -250,6 +251,7 @@
 		A99BC4AE2C35AF23009E9FC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike3DViewController.swift; sourceTree = "<group>"; };
+		A9C7174B2CDCD8BB00E1CE95 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesCell.swift; sourceTree = "<group>"; };
 		A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -485,6 +487,7 @@
 				A99BC47D2C35A366009E9FC1 /* ImageExtension.swift */,
 				A99BC47F2C35A37D009E9FC1 /* StackViewExtension.swift */,
 				A99BC4812C35A398009E9FC1 /* CornerRadiusExtension.swift */,
+				A9C7174B2CDCD8BB00E1CE95 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 				A914DCB72C4E79B500E2A224 /* MobileNetV2.mlmodel in Sources */,
 				A996B28A2C7F76F4006E3996 /* InvitationService.swift in Sources */,
 				A942CBA62C4A99920047F7A3 /* StarRatingView.swift in Sources */,
+				A9C7174C2CDCD8BB00E1CE95 /* UIViewExtensions.swift in Sources */,
 				A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */,
 				A99BC48F2C35A91A009E9FC1 /* ForgotPasswordViewController.swift in Sources */,
 				A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */,
