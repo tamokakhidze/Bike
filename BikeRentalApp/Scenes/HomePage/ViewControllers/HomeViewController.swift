@@ -470,7 +470,7 @@ extension HomeViewController {
     
     enum Sharing {
         static let textToShare = "Check out this amazing bike rental app!"
-        static let urlToShare = URL(string: "https://github.com/tamokakhidze/BikeRentalApp")
+        static let urlToShare = URL(string: "https://github.com/tamokakhidze/BikeRentalApp") as Any
         static let imageToShareName = "logoImage"
         static let excludedActivityTypes: [UIActivity.ActivityType] = [.addToReadingList, .print]
     }

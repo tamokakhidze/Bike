@@ -124,6 +124,7 @@ final class HomeViewModel: ObservableObject {
     func fetchData(completion: @escaping () -> Void) {
         db.collection("bikes").order(by: "price", descending: false).getDocuments { (querySnapshot, error) in
             if let error = error {
+                print("Error fetching bikes: \(error.localizedDescription)")
                 completion()
                 return
             }

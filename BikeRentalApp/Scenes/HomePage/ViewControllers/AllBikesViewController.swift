@@ -36,7 +36,7 @@ final class AllBikesViewController: UIViewController {
         return collectionView
     }()
     
-    private let segmentControl: UISegmentedControl = {
+    private lazy var segmentControl: UISegmentedControl = {
         let segmentControl = UISegmentedControl(items: Titles.segmentItems)
         segmentControl.frame = .zero
         segmentControl.addTarget(self, action: #selector(segmentControlChanged), for: .valueChanged)
