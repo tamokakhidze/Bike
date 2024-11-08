@@ -75,7 +75,6 @@ class SliderCollectionViewCell: UICollectionViewCell {
         return imageView
     }
     
-    
     func configureSliderCell(imageURL: String, text: String, subtext: String) {
         guard let imageURL = URL(string: imageURL) else { return }
         images.setImage(with: imageURL)

@@ -37,10 +37,10 @@ class LeaderBoardViewModel: ObservableObject {
             case .success(let success):
                 guard let self = self else { return }
                 self.users = success.sorted( by: {$0.points ?? 0 > $1.points ?? 0} )
-                print("Total users fetched: \(self.users.count ?? 0)")
+                print("Total users fetched: \(self.users.count)")
                 if success.count >= 3 {
-                    self.topThreeUser = Array(self.users.prefix(3) ?? [])
-                    print("top 3 users fetched: \(self.topThreeUser.count ?? 0)")
+                    self.topThreeUser = Array(self.users.prefix(3))
+                    print("top 3 users fetched: \(self.topThreeUser.count)")
                 }
                 for (index, user) in self.users.enumerated() {
                     if user.email == self.currentUserEmail {
@@ -58,7 +58,7 @@ class LeaderBoardViewModel: ObservableObject {
     func inviteUser(userID: String) {
         InvitationService.shared.sendInvitation(to: userID, from: currentUser ?? "no current user detected") { success, error in
             if let error = error {
-                print("Sorry, invitation was not send. try again later")
+                print("Sorry, invitation was not send. \(error)")
             } else {
                 print("invitation sent!!!!")
             }

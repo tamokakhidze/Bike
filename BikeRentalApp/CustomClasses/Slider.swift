@@ -7,8 +7,11 @@
 
 import UIKit
 
+// MARK: - Slider
+
 class Slider: UICollectionView {
     
+    // MARK: - Init
     init(scrollDirection: UICollectionView.ScrollDirection = .horizontal,
          lineSpacing: CGFloat = 0,
          interItemSpacing: CGFloat = 0,
@@ -27,18 +30,22 @@ class Slider: UICollectionView {
         layout.itemSize = CGSize(width: itemWidth, height: itemHeight )
         
         super.init(frame: .zero, collectionViewLayout: layout)
-        
         self.register(cell, forCellWithReuseIdentifier: identifier)
-        self.showsHorizontalScrollIndicator = showIndicator
-        self.isPagingEnabled = paging
-        self.frame = .zero
-        self.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.tag = tag
-        
+        configureSlider()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Configurations
+    private func configureSlider() {
+        self.showsHorizontalScrollIndicator = showIndicator
+        self.isPagingEnabled = paging
+        self.frame = .zero
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.tag = tag
+    }
+    
 }
+

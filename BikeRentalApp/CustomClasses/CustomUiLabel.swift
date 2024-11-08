@@ -9,7 +9,7 @@ import UIKit
 
 class CustomUiLabel: UILabel {
     
-    init(fontSize: CGFloat, text: String, tintColor: UIColor, textAlignment: NSTextAlignment, fontWeight: UIFont.Weight = .bold) {
+    init(fontSize: CGFloat, text: String, tintColor: UIColor, textAlignment: NSTextAlignment = .left, fontWeight: UIFont.Weight = .bold) {
         super.init(frame: .zero)
         self.font = .systemFont(ofSize: fontSize, weight: fontWeight)
         self.text = text

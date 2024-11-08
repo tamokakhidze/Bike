@@ -56,7 +56,7 @@ final class FirestoreService: FirestoreFetchable {
         collectionRef.getDocuments { snapshot, error in
             if let error = error {
                 completion(.failure(error))
-                print(snapshot)
+                print(snapshot as Any)
                 print(error)
                 return
             }

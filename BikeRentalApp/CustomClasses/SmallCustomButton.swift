@@ -7,18 +7,45 @@
 
 import UIKit
 
+// MARK: - SmallCustomButton
+
 class SmallCustomButton: UIButton {
+    
+    // MARK: - Init
     
     init(width: CGFloat, height: CGFloat, backgroundImage: String = "", backgroundColor: UIColor) {
         super.init(frame: .zero)
-        
+        configureAppearance(width: width, height: height, backgroundColor: backgroundColor)
+        configureBackground(backgroundImage: backgroundImage)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Configurations
+    
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let margin: CGFloat = 10
+        let area = self.bounds.insetBy(dx: -margin, dy: -margin)
+        return area.contains(point)
+    }
+    
+    private func configureAppearance(width: CGFloat, height: CGFloat, backgroundColor: UIColor) {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
         self.backgroundColor = backgroundColor
         self.layer.cornerRadius = height / 2
         self.clipsToBounds = true
-        
+        self.layer.shadowColor = UIColor.gray.withAlphaComponent(0.2).cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 22.9)
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 11.45
+        self.layer.masksToBounds = false
+    }
+    
+    private func configureBackground(backgroundImage: String) {
         if !backgroundImage.isEmpty {
             let imageView = UIImageView(image: UIImage(named: backgroundImage)?.withRenderingMode(.alwaysTemplate))
             imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -34,21 +61,12 @@ class SmallCustomButton: UIButton {
                 imageView.heightAnchor.constraint(equalToConstant: 20)
             ])
         }
+    }
+}
+
+// MARK: - Constants Extension
+extension SmallCustomButton {
+    enum Sizing {
         
-        self.layer.shadowColor = UIColor.gray.withAlphaComponent(0.2).cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 22.9)
-        self.layer.shadowOpacity = 1.0
-        self.layer.shadowRadius = 11.45
-        self.layer.masksToBounds = false
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
-        let margin: CGFloat = 10
-        let area = self.bounds.insetBy(dx: -margin, dy: -margin)
-        return area.contains(point)
     }
 }
