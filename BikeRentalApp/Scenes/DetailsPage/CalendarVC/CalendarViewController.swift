@@ -14,18 +14,19 @@ import ActivityKit
 
 final class CalendarViewController: UIViewController {
     
-    // MARK: - Ui components and properties
-    private lazy var dividers: [UIView] = {
-         return (0..<3).map { _ in
-             let divider = UIView()
-             divider.translatesAutoresizingMaskIntoConstraints = false
-             divider.backgroundColor = UIColor(resource: .input)
-             divider.layer.cornerRadius = 5
-             return divider
-         }
-     }()
+    // MARK: - UI components and Properties
     
-    private lazy var startTimeView: UIDatePicker = {
+    private let dividers: [UIView] = {
+        return (0..<3).map { _ in
+            let divider = UIView()
+            divider.translatesAutoresizingMaskIntoConstraints = false
+            divider.backgroundColor = .input
+            divider.layer.cornerRadius = Sizing.dividerCornerRadius
+            return divider
+        }
+    }()
+    
+    private let startTimeView: UIDatePicker = {
         let datePickerView = UIDatePicker()
         datePickerView.preferredDatePickerStyle = .compact
         datePickerView.datePickerMode = .dateAndTime
@@ -33,13 +34,12 @@ final class CalendarViewController: UIViewController {
         datePickerView.backgroundColor = .darkBlue
         datePickerView.overrideUserInterfaceStyle = .dark
         datePickerView.locale = Locale(identifier: "ka-GE")
-        datePickerView.layer.cornerRadius = 15
+        datePickerView.layer.cornerRadius = Sizing.datePickerCornerRadius
         datePickerView.translatesAutoresizingMaskIntoConstraints = false
-        datePickerView.addTarget(self, action: #selector(timeChanged), for: .valueChanged)
         return datePickerView
     }()
     
-    private lazy var endTimeView: UIDatePicker = {
+    private let endTimeView: UIDatePicker = {
         let datePickerView = UIDatePicker()
         datePickerView.preferredDatePickerStyle = .compact
         datePickerView.datePickerMode = .dateAndTime
@@ -47,32 +47,49 @@ final class CalendarViewController: UIViewController {
         datePickerView.overrideUserInterfaceStyle = .dark
         datePickerView.tintColor = .white
         datePickerView.locale = Locale(identifier: "ka-GE")
-        datePickerView.layer.cornerRadius = 15
+        datePickerView.layer.cornerRadius = Sizing.datePickerCornerRadius
         datePickerView.translatesAutoresizingMaskIntoConstraints = false
-        datePickerView.addTarget(self, action: #selector(timeChanged), for: .valueChanged)
         return datePickerView
     }()
     
-    private lazy var mainStackView: UIStackView = {
+    private let mainStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 10
+        stackView.spacing = Sizing.stackViewSpacing
         stackView.alignment = .center
         stackView.distribution = .equalCentering
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
     
-    private var titleLabel = CustomUiLabel(fontSize: 34, text: "Choose start and end times", tintColor: .black, textAlignment: .center, fontWeight: .black)
-    private var startTitleLabel = CustomUiLabel(fontSize: 20, text: "Start time", tintColor: .black, textAlignment: .left)
-    private var endTitleLabel = CustomUiLabel(fontSize: 20, text: "End time", tintColor: .black, textAlignment: .center)
-    private var checkAvailabilityButton = CustomButton(title: "Check Availability", hasBackground: true, width: 350)
-    private var rentBikeButton = CustomButton(title: "Rent Bike", hasBackground: true, width: 350)
-    private var viewModel = CalendarViewModel()
+    private let titleLabel = CustomUiLabel(
+        fontSize: Sizing.titleFontSize,
+        text: Titles.mainTitle,
+        tintColor: .darkBlue,
+        textAlignment: .center,
+        fontWeight: .black
+    )
+    
+    private let checkAvailabilityButton = CustomButton(
+        title: Titles.checkAvailabilityButtonTitle,
+        hasBackground: true,
+        width: Sizing.buttonWidth
+    )
+    
+    private let rentBikeButton = CustomButton(
+        title: Titles.rentBikeButtonTitle,
+        hasBackground: true,
+        width: Sizing.buttonWidth
+    )
+    
     private var backgroundOne = CustomRectangleView(color: .darkBlue)
-    private var backgroundTwo = CustomRectangleView(color: .white)
+    
+    private var viewModel = CalendarViewModel()
+    
     var bike: Bike
+    
     var isHelmetChosen: Bool
+    
     var helmetPrice: Double
     
     private var isBikeAvailable: Bool = false {
@@ -82,7 +99,7 @@ final class CalendarViewController: UIViewController {
     }
     
     // MARK: - Lifecycle
-
+    
     init(bike: Bike, isHelmetChosen: Bool, helmetPrice: Double) {
         self.bike = bike
         self.isHelmetChosen = isHelmetChosen
@@ -98,56 +115,71 @@ final class CalendarViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         addTargets()
-        viewModel.delegate = self
+        setDelegates()
     }
     
-    // MARK: - Ui setup
-
+    // MARK: - UI Setup
+    
     private func setupUI() {
-        view.backgroundColor = .white
-        view.addSubview(backgroundOne)
-        view.addSubview(backgroundTwo)
-        view.addSubview(mainStackView)
-        
-        mainStackView.addArrangedSubviews(titleLabel, dividers[0], startTimeView, endTimeView, checkAvailabilityButton,rentBikeButton,UIView())
-        
+        setupView()
+        setupViewHierarchy()
         setConstraints()
-        
+    }
+    
+    private func setupView() {
+        view.backgroundColor = .white
         rentBikeButton.isEnabled = false
+    }
+    
+    private func setupViewHierarchy() {
+        view.addSubviews(backgroundOne, mainStackView)
+        mainStackView.addArrangedSubviews(
+            titleLabel,
+            dividers[0],
+            startTimeView,
+            endTimeView,
+            checkAvailabilityButton,
+            rentBikeButton,
+            UIView()
+        )
     }
     
     private func setConstraints() {
         NSLayoutConstraint.activate([
-            backgroundOne.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 300),
+            backgroundOne.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Sizing.backgroundTopConstant),
             backgroundOne.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             backgroundOne.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             backgroundOne.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
-            mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 160),
-            mainStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            mainStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: Sizing.mainStackViewTopConstant),
+            mainStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Sizing.mainStackViewLeadingConstant),
+            mainStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: Sizing.mainStackViewTrailingConstant),
             mainStackView.bottomAnchor.constraint(lessThanOrEqualTo: view.bottomAnchor),
             
-            dividers[0].widthAnchor.constraint(equalToConstant: 300),
-            dividers[0].heightAnchor.constraint(equalToConstant: 10),
+            dividers[0].widthAnchor.constraint(equalToConstant: Sizing.dividerWidth),
+            dividers[0].heightAnchor.constraint(equalToConstant: Sizing.dividerHeight),
             
-            dividers[1].widthAnchor.constraint(equalToConstant: 300),
-            dividers[1].heightAnchor.constraint(equalToConstant: 5),
+            startTimeView.widthAnchor.constraint(equalToConstant: Sizing.timeViewWidth),
+            startTimeView.heightAnchor.constraint(equalToConstant: Sizing.timeViewHeight),
             
-            dividers[2].widthAnchor.constraint(equalToConstant: 300),
-            dividers[2].heightAnchor.constraint(equalToConstant: 10),
-            
-            startTimeView.widthAnchor.constraint(equalToConstant: 170),
-            startTimeView.heightAnchor.constraint(equalToConstant: 30),
-            
-            endTimeView.widthAnchor.constraint(equalToConstant: 170),
-            endTimeView.heightAnchor.constraint(equalToConstant: 30)
+            endTimeView.widthAnchor.constraint(equalToConstant: Sizing.timeViewWidth),
+            endTimeView.heightAnchor.constraint(equalToConstant: Sizing.timeViewHeight)
         ])
     }
-
+    
+    // MARK: - Add Targets
+    
     private func addTargets() {
+        startTimeView.addTarget(self, action: #selector(timeChanged), for: .valueChanged)
+        endTimeView.addTarget(self, action: #selector(timeChanged), for: .valueChanged)
         checkAvailabilityButton.addTarget(self, action: #selector(checkAvailabilityButtonTapped), for: .touchUpInside)
         rentBikeButton.addTarget(self, action: #selector(rentBikeButtonTapped), for: .touchUpInside)
+    }
+    
+    // MARK: - Set Delegates
+    
+    private func setDelegates() {
+        viewModel.delegate = self
     }
     
     // MARK: - Actions
@@ -196,7 +228,7 @@ extension CalendarViewController: PKPaymentAuthorizationViewControllerDelegate {
             let booking = Booking(dictionary: bookingInfo)
             
             // MARK: - Booking and adding live activity
-
+            
             BikeService.shared.rentBike(with: booking) { success, error in
                 if success {
                     print("Booking added successfully")
@@ -257,7 +289,28 @@ extension CalendarViewController: CalendarViewModelDelegate {
     }
 }
 
+// MARK: - Constants Extension
 
-#Preview {
-    CalendarViewController(bike: Bike(bicycleID: "", price: 2.2, year: 2022, hasLights: true, numberOfGears: 3, geometry: "df", locationLatitude: 43.2441, locationLongitude: 42.344, brakeType: "dir", image: "fnf", detailedImages: ["fjf"], hasHelmet: true, helmetPrice: 3.4, ownerID: "ff"), isHelmetChosen: true, helmetPrice: 3.3)
+extension CalendarViewController {
+    enum Sizing {
+        static let dividerCornerRadius: CGFloat = 5
+        static let datePickerCornerRadius: CGFloat = 15
+        static let stackViewSpacing: CGFloat = 10
+        static let buttonWidth: CGFloat = 350
+        static let titleFontSize: CGFloat = 34
+        static let backgroundTopConstant: CGFloat = 300
+        static let mainStackViewTopConstant: CGFloat = 160
+        static let mainStackViewLeadingConstant: CGFloat = 20
+        static let mainStackViewTrailingConstant: CGFloat = -20
+        static let dividerWidth: CGFloat = 300
+        static let dividerHeight: CGFloat = 10
+        static let timeViewWidth: CGFloat = 170
+        static let timeViewHeight: CGFloat = 30
+    }
+    
+    enum Titles {
+        static let mainTitle = "Choose start and end times"
+        static let checkAvailabilityButtonTitle = "Check Availability"
+        static let rentBikeButtonTitle = "Rent Bike"
+    }
 }

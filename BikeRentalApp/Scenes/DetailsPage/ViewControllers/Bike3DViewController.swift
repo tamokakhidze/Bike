@@ -10,6 +10,8 @@ import SceneKit
 
 class Bike3DViewController: UIViewController {
     
+    // MARK: - UI Components
+    
     private lazy var sceneView: SCNView = {
         let sceneView = SCNView()
         sceneView.allowsCameraControl = true
@@ -20,17 +22,31 @@ class Bike3DViewController: UIViewController {
         return sceneView
     }()
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         load3DModelFromAssets()
     }
     
+    // MARK: - UI Setup
+    
     private func setupUI() {
+        setupView()
+        setupViewHierarchy()
+        setConstraints()
+    }
+    
+    private func setupView() {
         view.backgroundColor = .darkBackground
-        
+    }
+    
+    private func setupViewHierarchy() {
         view.addSubview(sceneView)
-        
+    }
+    
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             sceneView.topAnchor.constraint(equalTo: view.topAnchor),
             sceneView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -38,8 +54,9 @@ class Bike3DViewController: UIViewController {
             sceneView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
         ])
-        
     }
+    
+    // MARK: - Loading 3D Model
     
     private func load3DModelFromAssets() {
         guard let scene = SCNScene(named: "voltage.usdz") else {

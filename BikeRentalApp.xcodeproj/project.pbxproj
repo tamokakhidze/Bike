@@ -54,7 +54,6 @@
 		A942CB9D2C494CC90047F7A3 /* AllBikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */; };
 		A942CBA02C49CD040047F7A3 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = A942CB9F2C49CD040047F7A3 /* SVGKit */; };
 		A942CBA22C49CD040047F7A3 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A942CBA12C49CD040047F7A3 /* SVGKitSwift */; };
-		A942CBA42C49D30A0047F7A3 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CBA32C49D30A0047F7A3 /* DetailsViewModel.swift */; };
 		A942CBA62C4A99920047F7A3 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A942CBA52C4A99920047F7A3 /* StarRatingView.swift */; };
 		A94AD8262C7B80A80079B8D8 /* voltage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = A94AD8252C7B80A70079B8D8 /* voltage.usdz */; };
 		A94AD82D2C7BC3E30079B8D8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94AD82C2C7BC3E30079B8D8 /* WidgetKit.framework */; };
@@ -95,12 +94,9 @@
 		A99BC4AD2C35AF16009E9FC1 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4AC2C35AF16009E9FC1 /* LoginRequest.swift */; };
 		A99BC4AF2C35AF23009E9FC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4AE2C35AF23009E9FC1 /* User.swift */; };
 		A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */; };
-		A9A2F2B12C7B760300BD183F /* Bike3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */; };
 		A9C7174C2CDCD8BB00E1CE95 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C7174B2CDCD8BB00E1CE95 /* UIViewExtensions.swift */; };
-		A9CEAE392C3EA214003AE4A2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */; };
 		A9CEAE3B2C3EA39E003AE4A2 /* FeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */; };
 		A9CEAE3E2C3EA440003AE4A2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */; };
-		A9CEAE402C3EA519003AE4A2 /* SliderPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEAE3F2C3EA519003AE4A2 /* SliderPopUpViewController.swift */; };
 		A9FA1F082C874FF90003CECB /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA1F072C874FF90003CECB /* DashboardView.swift */; };
 		A9FA1F0A2C87745E0003CECB /* RentalHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FA1F092C87745E0003CECB /* RentalHistoryView.swift */; };
 		A9FA1F0C2C8F03000003CECB /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A9FA1F0B2C8F02FF0003CECB /* Location.gpx */; };
@@ -185,7 +181,6 @@
 		A942CB942C491E440047F7A3 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		A942CB992C491ED90047F7A3 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllBikesViewController.swift; sourceTree = "<group>"; };
-		A942CBA32C49D30A0047F7A3 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		A942CBA52C4A99920047F7A3 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		A94AD8252C7B80A70079B8D8 /* voltage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = voltage.usdz; sourceTree = "<group>"; };
 		A94AD82B2C7BC3E30079B8D8 /* BikeAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BikeAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,12 +221,9 @@
 		A99BC4AC2C35AF16009E9FC1 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		A99BC4AE2C35AF23009E9FC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike3DViewController.swift; sourceTree = "<group>"; };
 		A9C7174B2CDCD8BB00E1CE95 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturesCell.swift; sourceTree = "<group>"; };
 		A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
-		A9CEAE3F2C3EA519003AE4A2 /* SliderPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPopUpViewController.swift; sourceTree = "<group>"; };
 		A9FA1F072C874FF90003CECB /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		A9FA1F092C87745E0003CECB /* RentalHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalHistoryView.swift; sourceTree = "<group>"; };
 		A9FA1F0B2C8F02FF0003CECB /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Location.gpx; path = BikeRentalApp/Resources/Location.gpx; sourceTree = SOURCE_ROOT; };
@@ -250,6 +242,8 @@
 		A9C717572CDDF3A200E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717582CDDF3CB00E1CE95 /* ScannerPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ScannerPage; sourceTree = "<group>"; };
 		A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FullMapViewController; sourceTree = "<group>"; };
+		A9C717602CDE0AB800E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+		A9C717612CDE0ACE00E1CE95 /* ViewControllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewControllers; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +306,7 @@
 		A914DCBB2C4EF62900E2A224 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				A942A3B42C3EC10300D0833E /* midPoint.swift */,
 				A914DCB62C4E79B500E2A224 /* MobileNetV2.mlmodel */,
 				A914DCA32C4C646C00E2A224 /* JsonBackup.swift */,
 			);
@@ -445,7 +440,7 @@
 				A99BC4922C35A940009E9FC1 /* RootVC */,
 				A99BC4B02C35B914009E9FC1 /* HomePage */,
 				A971FD992C404E2400B91A48 /* FullMapPage */,
-				A9CEAE372C3EA15D003AE4A2 /* DetailsVC */,
+				A9CEAE372C3EA15D003AE4A2 /* DetailsPage */,
 				A99BC4B32C35B963009E9FC1 /* LeaderBoardVC */,
 				A942CB7F2C4917980047F7A3 /* ShopVC */,
 				A99BC4B62C35B9CB009E9FC1 /* ProfileVC */,
@@ -503,6 +498,7 @@
 		A99BC47C2C35A327009E9FC1 /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */,
 				A99BC4982C35A9D7009E9FC1 /* CustomButton.swift */,
 				A90E1FF22C3BFC6400E7E1C8 /* SmallCustomButton.swift */,
 				A99BC49A2C35A9FC009E9FC1 /* CustomInputView.swift */,
@@ -601,19 +597,15 @@
 			path = ProfileVC;
 			sourceTree = "<group>";
 		};
-		A9CEAE372C3EA15D003AE4A2 /* DetailsVC */ = {
+		A9CEAE372C3EA15D003AE4A2 /* DetailsPage */ = {
 			isa = PBXGroup;
 			children = (
-				A942CBA32C49D30A0047F7A3 /* DetailsViewModel.swift */,
-				A9CEAE382C3EA214003AE4A2 /* DetailsViewController.swift */,
-				A9CEAE3A2C3EA39E003AE4A2 /* FeaturesCell.swift */,
-				A9CEAE3F2C3EA519003AE4A2 /* SliderPopUpViewController.swift */,
-				A942A3B42C3EC10300D0833E /* midPoint.swift */,
-				A9A2F2B02C7B760300BD183F /* Bike3DViewController.swift */,
+				A9C717612CDE0ACE00E1CE95 /* ViewControllers */,
+				A9C717602CDE0AB800E1CE95 /* ViewModel */,
 				A9CEAE3C2C3EA42F003AE4A2 /* CalendarVC */,
 				A971FD9D2C404ED500B91A48 /* SuccessVC */,
 			);
-			path = DetailsVC;
+			path = DetailsPage;
 			sourceTree = "<group>";
 		};
 		A9CEAE3C2C3EA42F003AE4A2 /* CalendarVC */ = {
@@ -712,6 +704,8 @@
 				A9C717572CDDF3A200E1CE95 /* ViewModel */,
 				A9C717582CDDF3CB00E1CE95 /* ScannerPage */,
 				A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */,
+				A9C717602CDE0AB800E1CE95 /* ViewModel */,
+				A9C717612CDE0ACE00E1CE95 /* ViewControllers */,
 			);
 			name = BikeRentalApp;
 			packageProductDependencies = (
@@ -840,7 +834,6 @@
 				A942CB812C4917AE0047F7A3 /* ShopViewModel.swift in Sources */,
 				A942A3AF2C3EAB3500D0833E /* BikeService.swift in Sources */,
 				A9FA1F0A2C87745E0003CECB /* RentalHistoryView.swift in Sources */,
-				A9CEAE402C3EA519003AE4A2 /* SliderPopUpViewController.swift in Sources */,
 				A9CEAE3B2C3EA39E003AE4A2 /* FeaturesCell.swift in Sources */,
 				A90E1FE12C3AF66300E7E1C8 /* CustomUiLabel.swift in Sources */,
 				A90E1FF32C3BFC6400E7E1C8 /* SmallCustomButton.swift in Sources */,
@@ -848,11 +841,9 @@
 				A942CB832C4917BB0047F7A3 /* ShopMainView.swift in Sources */,
 				A90E1FFF2C3D823800E7E1C8 /* ProfileHostingViewController.swift in Sources */,
 				A99BC4AD2C35AF16009E9FC1 /* LoginRequest.swift in Sources */,
-				A9A2F2B12C7B760300BD183F /* Bike3DViewController.swift in Sources */,
 				A90E1FF12C3BFC3200E7E1C8 /* CustomImageView.swift in Sources */,
 				A90E20052C3D840000E7E1C8 /* RentHistoryCell.swift in Sources */,
 				A942A3B52C3EC10300D0833E /* midPoint.swift in Sources */,
-				A942CBA42C49D30A0047F7A3 /* DetailsViewModel.swift in Sources */,
 				A942CB892C49195D0047F7A3 /* LeaderboardHostingViewController.swift in Sources */,
 				A902312D2C427F2F00C4AC3C /* CalendarViewModel.swift in Sources */,
 				A942CB9A2C491ED90047F7A3 /* Product.swift in Sources */,
@@ -866,7 +857,6 @@
 				A90E1FF92C3BFDC400E7E1C8 /* SliderCollectionViewCell.swift in Sources */,
 				A942A3B32C3EBFC000D0833E /* Booking.swift in Sources */,
 				A942CB8D2C4919950047F7A3 /* UsersScrollView.swift in Sources */,
-				A9CEAE392C3EA214003AE4A2 /* DetailsViewController.swift in Sources */,
 				A902312B2C42701100C4AC3C /* UserInfo.swift in Sources */,
 				A914DCA22C4C4A9300E2A224 /* AlertView.swift in Sources */,
 				A90E20012C3D829C00E7E1C8 /* ProfileView.swift in Sources */,
