@@ -12,7 +12,7 @@ class Bike3DViewController: UIViewController {
     
     // MARK: - UI Components
     
-    private lazy var sceneView: SCNView = {
+    private let sceneView: SCNView = {
         let sceneView = SCNView()
         sceneView.allowsCameraControl = true
         sceneView.backgroundColor = .clear

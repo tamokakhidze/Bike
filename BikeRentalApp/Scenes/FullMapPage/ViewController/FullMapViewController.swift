@@ -173,6 +173,8 @@ extension FullMapViewController: MKMapViewDelegate {
     }
 }
 
+// MARK: - Constants Extension
+
 extension FullMapViewController {
     enum Map {
         static let nearbyDistance: Double = 10000

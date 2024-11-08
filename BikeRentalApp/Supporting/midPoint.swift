@@ -24,7 +24,7 @@ public func midPoint(of location1: CLLocation, _ location2: CLLocation) -> CLLoc
     let Bx = cos(latitude2) * cos(longitude2 - longitude1)
     let By = cos(latitude2) * sin(longitude2 - longitude1)
     
-    var latitude3 = atan((sin(latitude1) + sin(latitude2)) / sqrt((cos(latitude1) + Bx) * (cos(latitude1) + Bx) + (By * By)))
+    let latitude3 = atan((sin(latitude1) + sin(latitude2)) / sqrt((cos(latitude1) + Bx) * (cos(latitude1) + Bx) + (By * By)))
     
     let longitude3 = longitude1 + atan2(By, cos(latitude1) + Bx)
                          

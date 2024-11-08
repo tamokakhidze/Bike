@@ -60,6 +60,8 @@ class RootViewController: UIViewController {
     
 }
 
+// MARK: - Constants Extension
+
 extension RootViewController {
     enum Images {
         static let trophy = UIImage(systemName: "trophy")

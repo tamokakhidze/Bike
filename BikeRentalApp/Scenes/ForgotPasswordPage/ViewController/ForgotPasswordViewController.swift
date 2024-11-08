@@ -12,7 +12,7 @@ final class ForgotPasswordViewController: UIViewController {
     
     // MARK: - UI Components
     
-    private lazy var stackView: UIStackView = {
+    private let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = Sizing.stackViewSpacing
@@ -22,13 +22,13 @@ final class ForgotPasswordViewController: UIViewController {
         
     }()
     
-    private var resetPasswordButton = CustomButton(
+    private let resetPasswordButton = CustomButton(
         title: Titles.resetPasswordTitle,
         hasBackground: true,
         width: Sizing.buttonWidth
     )
     
-    private var emailTextField = CustomInputView(inputType: .Email)
+    private let emailTextField = CustomInputView(inputType: .Email)
     
     // MARK: - Properties
     

@@ -20,7 +20,7 @@ final class AllBikesViewController: UIViewController {
         textAlignment: .center
     )
     
-    private lazy var popularBikesCollectionView: UICollectionView = {
+    private let popularBikesCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = Sizing.collectionViewLineSpacing
@@ -36,7 +36,7 @@ final class AllBikesViewController: UIViewController {
         return collectionView
     }()
     
-    private lazy var segmentControl: UISegmentedControl = {
+    private let segmentControl: UISegmentedControl = {
         let segmentControl = UISegmentedControl(items: Titles.segmentItems)
         segmentControl.frame = .zero
         segmentControl.addTarget(self, action: #selector(segmentControlChanged), for: .valueChanged)
@@ -154,6 +154,8 @@ extension AllBikesViewController: UICollectionViewDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+// MARK: - Constants Extension
 
 extension AllBikesViewController {
     enum Colors {

@@ -392,6 +392,7 @@ extension HomeViewController: MFMailComposeViewControllerDelegate {
     }
 }
 
+// MARK: - Constants Extension
 extension HomeViewController {
     enum Sizing {
         static let mainStackViewSpacing: CGFloat = 20

@@ -14,7 +14,7 @@ final class RegisterViewController: UIViewController {
     
     // MARK: - UI components
 
-    private lazy var stackView: UIStackView = {
+    private let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = Sizing.stackViewSpacing
@@ -23,41 +23,41 @@ final class RegisterViewController: UIViewController {
         return stackView
     }()
     
-    private lazy var logoImageView: UIImageView = {
+    private let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = .logo
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
-    private lazy var titleLabel = CustomUiLabel(
+    private let titleLabel = CustomUiLabel(
         fontSize: Sizing.titleFontSize,
         text: Titles.createAccountText,
         tintColor: .black,
         textAlignment: .center
     )
     
-    private var signUpButton = CustomButton(
+    private let signUpButton = CustomButton(
         title: Titles.signUp,
         hasBackground: true,
         width: Sizing.buttonWidth
     )
     
-    private var signInButton = CustomButton(
+    private let signInButton = CustomButton(
         title: Titles.signIn,
         hasBackground: false,
         width: Sizing.buttonWidth
     )
     
-    private var usernameField = CustomInputView(inputType: .Username)
+    private let usernameField = CustomInputView(inputType: .Username)
     
-    private var emailTextField = CustomInputView(inputType: .Email)
+    private let emailTextField = CustomInputView(inputType: .Email)
     
-    private var passwordTextField = CustomInputView(inputType: .Password)
+    private let passwordTextField = CustomInputView(inputType: .Password)
     
     // MARK: - Properties
 
-    private var viewModel = RegisterViewModel()
+    private let viewModel = RegisterViewModel()
     
     // MARK: - Lifecycle
 

@@ -20,7 +20,7 @@ final class LoginViewController: UIViewController {
 
     // MARK: - UI Components
     
-    private lazy var stackView: UIStackView = {
+    private let stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = Sizing.stackViewSpacing
@@ -29,7 +29,7 @@ final class LoginViewController: UIViewController {
         return stackView
     }()
     
-    private lazy var logoImageView: UIImageView = {
+    private let logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = .logo
         imageView.contentMode = .scaleAspectFit

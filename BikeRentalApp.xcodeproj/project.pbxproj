@@ -238,10 +238,10 @@
 		A9C717532CDCF87500E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 		A9C717542CDCFD7F00E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717552CDCFD9600E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
-		A9C717562CDD06B300E1CE95 /* LandingViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LandingViewController; sourceTree = "<group>"; };
+		A9C717562CDD06B300E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 		A9C717572CDDF3A200E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717582CDDF3CB00E1CE95 /* ScannerPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ScannerPage; sourceTree = "<group>"; };
-		A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FullMapViewController; sourceTree = "<group>"; };
+		A9C7175F2CDE0A6500E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 		A9C717602CDE0AB800E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717612CDE0ACE00E1CE95 /* ViewControllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewControllers; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -328,14 +328,6 @@
 			path = ShopVC;
 			sourceTree = "<group>";
 		};
-		A942CB9B2C494CB60047F7A3 /* AllBikesViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */,
-			);
-			path = AllBikesViewController;
-			sourceTree = "<group>";
-		};
 		A94AD8302C7BC3E30079B8D8 /* BikeAppWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,7 +358,7 @@
 		A971FD992C404E2400B91A48 /* FullMapPage */ = {
 			isa = PBXGroup;
 			children = (
-				A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */,
+				A9C7175F2CDE0A6500E1CE95 /* ViewController */,
 			);
 			path = FullMapPage;
 			sourceTree = "<group>";
@@ -553,7 +545,7 @@
 		A99BC4952C35A99D009E9FC1 /* LandingPage */ = {
 			isa = PBXGroup;
 			children = (
-				A9C717562CDD06B300E1CE95 /* LandingViewController */,
+				A9C717562CDD06B300E1CE95 /* ViewController */,
 			);
 			path = LandingPage;
 			sourceTree = "<group>";
@@ -571,8 +563,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C717572CDDF3A200E1CE95 /* ViewModel */,
-				A9FA1F102C90AE820003CECB /* HomeViewController */,
-				A942CB9B2C494CB60047F7A3 /* AllBikesViewController */,
+				A9FA1F102C90AE820003CECB /* ViewControllers */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -602,27 +593,28 @@
 			children = (
 				A9C717612CDE0ACE00E1CE95 /* ViewControllers */,
 				A9C717602CDE0AB800E1CE95 /* ViewModel */,
-				A9CEAE3C2C3EA42F003AE4A2 /* CalendarVC */,
 				A971FD9D2C404ED500B91A48 /* SuccessVC */,
+				A9CEAE3C2C3EA42F003AE4A2 /* CalendarPage */,
 			);
 			path = DetailsPage;
 			sourceTree = "<group>";
 		};
-		A9CEAE3C2C3EA42F003AE4A2 /* CalendarVC */ = {
+		A9CEAE3C2C3EA42F003AE4A2 /* CalendarPage */ = {
 			isa = PBXGroup;
 			children = (
 				A9CEAE3D2C3EA440003AE4A2 /* CalendarViewController.swift */,
 				A902312C2C427F2F00C4AC3C /* CalendarViewModel.swift */,
 			);
-			path = CalendarVC;
+			path = CalendarPage;
 			sourceTree = "<group>";
 		};
-		A9FA1F102C90AE820003CECB /* HomeViewController */ = {
+		A9FA1F102C90AE820003CECB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */,
+				A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */,
 			);
-			path = HomeViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A9FA1F112C90AFC80003CECB /* ProfileView */ = {
@@ -700,10 +692,10 @@
 				A9C717532CDCF87500E1CE95 /* ViewController */,
 				A9C717542CDCFD7F00E1CE95 /* ViewModel */,
 				A9C717552CDCFD9600E1CE95 /* ViewController */,
-				A9C717562CDD06B300E1CE95 /* LandingViewController */,
+				A9C717562CDD06B300E1CE95 /* ViewController */,
 				A9C717572CDDF3A200E1CE95 /* ViewModel */,
 				A9C717582CDDF3CB00E1CE95 /* ScannerPage */,
-				A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */,
+				A9C7175F2CDE0A6500E1CE95 /* ViewController */,
 				A9C717602CDE0AB800E1CE95 /* ViewModel */,
 				A9C717612CDE0ACE00E1CE95 /* ViewControllers */,
 			);

@@ -220,7 +220,7 @@ extension CalendarViewController: PKPaymentAuthorizationViewControllerDelegate {
             let bookingInfo: [String: Any] = [
                 "startTime": startTimeString,
                 "endTime": endTimeString,
-                "bicycleID": self.bike.bicycleID ?? "",
+                "bicycleID": self.bike.bicycleID,
                 "userID": Auth.auth().currentUser?.uid ?? "",
                 "totalPrice": String(format: "%.2f", totalPrice)
             ]
