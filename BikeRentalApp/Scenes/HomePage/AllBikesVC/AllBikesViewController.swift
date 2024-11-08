@@ -11,6 +11,8 @@ import UIKit
 
 final class AllBikesViewController: UIViewController, HomeViewModelDelegate {
     
+    func reloadData() {}
+    
     func scrollToItem(at indexPath: IndexPath, animated: Bool) {}
     
     func updatePageControl(currentPage: Int) {}

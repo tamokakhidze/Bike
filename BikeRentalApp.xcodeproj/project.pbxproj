@@ -16,7 +16,6 @@
 		A902312D2C427F2F00C4AC3C /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A902312C2C427F2F00C4AC3C /* CalendarViewModel.swift */; };
 		A90E1FE12C3AF66300E7E1C8 /* CustomUiLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FE02C3AF66300E7E1C8 /* CustomUiLabel.swift */; };
 		A90E1FE32C3AFCEC00E7E1C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A90E1FE22C3AFCEC00E7E1C8 /* GoogleService-Info.plist */; };
-		A90E1FE72C3BFB1C00E7E1C8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FE62C3BFB1C00E7E1C8 /* HomeViewModel.swift */; };
 		A90E1FE92C3BFBA000E7E1C8 /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FE82C3BFBA000E7E1C8 /* Bike.swift */; };
 		A90E1FEB2C3BFBC900E7E1C8 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FEA2C3BFBC900E7E1C8 /* Slider.swift */; };
 		A90E1FED2C3BFBFF00E7E1C8 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E1FEC2C3BFBFF00E7E1C8 /* CustomStackView.swift */; };
@@ -30,10 +29,8 @@
 		A90E20012C3D829C00E7E1C8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E20002C3D829C00E7E1C8 /* ProfileView.swift */; };
 		A90E20032C3D83DC00E7E1C8 /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E20022C3D83DC00E7E1C8 /* GridViewCell.swift */; };
 		A90E20052C3D840000E7E1C8 /* RentHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E20042C3D840000E7E1C8 /* RentHistoryCell.swift */; };
-		A914DC9A2C4BE9B800E2A224 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DC992C4BE9B800E2A224 /* ScannerViewController.swift */; };
 		A914DCA22C4C4A9300E2A224 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCA12C4C4A9300E2A224 /* AlertView.swift */; };
 		A914DCA42C4C646C00E2A224 /* JsonBackup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCA32C4C646C00E2A224 /* JsonBackup.swift */; };
-		A914DCA62C4D0C3300E2A224 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCA52C4D0C3300E2A224 /* ScannerViewModel.swift */; };
 		A914DCB12C4E783E00E2A224 /* DetectionResultValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB02C4E783E00E2A224 /* DetectionResultValidator.swift */; };
 		A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB22C4E786300E2A224 /* Classifier.swift */; };
 		A914DCB52C4E788C00E2A224 /* AddBikeFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */; };
@@ -153,7 +150,6 @@
 		A902312C2C427F2F00C4AC3C /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		A90E1FE02C3AF66300E7E1C8 /* CustomUiLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUiLabel.swift; sourceTree = "<group>"; };
 		A90E1FE22C3AFCEC00E7E1C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		A90E1FE62C3BFB1C00E7E1C8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A90E1FE82C3BFBA000E7E1C8 /* Bike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
 		A90E1FEA2C3BFBC900E7E1C8 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		A90E1FEC2C3BFBFF00E7E1C8 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
@@ -167,10 +163,8 @@
 		A90E20002C3D829C00E7E1C8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A90E20022C3D83DC00E7E1C8 /* GridViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
 		A90E20042C3D840000E7E1C8 /* RentHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentHistoryCell.swift; sourceTree = "<group>"; };
-		A914DC992C4BE9B800E2A224 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		A914DCA12C4C4A9300E2A224 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		A914DCA32C4C646C00E2A224 /* JsonBackup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonBackup.swift; sourceTree = "<group>"; };
-		A914DCA52C4D0C3300E2A224 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 		A914DCA72C4D36AE00E2A224 /* BikeRentalAppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BikeRentalAppDebug.entitlements; sourceTree = "<group>"; };
 		A914DCB02C4E783E00E2A224 /* DetectionResultValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionResultValidator.swift; sourceTree = "<group>"; };
 		A914DCB22C4E786300E2A224 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
@@ -255,6 +249,8 @@
 		A9C717542CDCFD7F00E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717552CDCFD9600E1CE95 /* ViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewController; sourceTree = "<group>"; };
 		A9C717562CDD06B300E1CE95 /* LandingViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LandingViewController; sourceTree = "<group>"; };
+		A9C717572CDDF3A200E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+		A9C717582CDDF3CB00E1CE95 /* ScannerPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ScannerPage; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,15 +300,6 @@
 				A914DCB42C4E788C00E2A224 /* AddBikeFormViewModel.swift */,
 			);
 			path = AddBikeView;
-			sourceTree = "<group>";
-		};
-		A914DC982C4BE9AB00E2A224 /* ScannerVC */ = {
-			isa = PBXGroup;
-			children = (
-				A914DC992C4BE9B800E2A224 /* ScannerViewController.swift */,
-				A914DCA52C4D0C3300E2A224 /* ScannerViewModel.swift */,
-			);
-			path = ScannerVC;
 			sourceTree = "<group>";
 		};
 		A914DCB82C4EAB9B00E2A224 /* LaunchPage */ = {
@@ -422,6 +409,7 @@
 		A99BC4612C35A13A009E9FC1 /* BikeRentalApp */ = {
 			isa = PBXGroup;
 			children = (
+				A9C717582CDDF3CB00E1CE95 /* ScannerPage */,
 				A914DCBB2C4EF62900E2A224 /* Supporting */,
 				A914DCA72C4D36AE00E2A224 /* BikeRentalAppDebug.entitlements */,
 				A971FD9C2C404E9800B91A48 /* BikeRentalApp.entitlements */,
@@ -456,7 +444,7 @@
 				A99BC48D2C35A90A009E9FC1 /* ForgotPasswordPage */,
 				A99BC4952C35A99D009E9FC1 /* LandingPage */,
 				A99BC4922C35A940009E9FC1 /* RootVC */,
-				A99BC4B02C35B914009E9FC1 /* HomeVC */,
+				A99BC4B02C35B914009E9FC1 /* HomePage */,
 				A971FD992C404E2400B91A48 /* FullMapVC */,
 				A9CEAE372C3EA15D003AE4A2 /* DetailsVC */,
 				A99BC4B32C35B963009E9FC1 /* LeaderBoardVC */,
@@ -584,14 +572,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A99BC4B02C35B914009E9FC1 /* HomeVC */ = {
+		A99BC4B02C35B914009E9FC1 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				A9FA1F102C90AE820003CECB /* Home */,
-				A914DC982C4BE9AB00E2A224 /* ScannerVC */,
+				A9C717572CDDF3A200E1CE95 /* ViewModel */,
+				A9FA1F102C90AE820003CECB /* HomeViewController */,
 				A942CB9B2C494CB60047F7A3 /* AllBikesVC */,
 			);
-			path = HomeVC;
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 		A99BC4B32C35B963009E9FC1 /* LeaderBoardVC */ = {
@@ -638,13 +626,12 @@
 			path = CalendarVC;
 			sourceTree = "<group>";
 		};
-		A9FA1F102C90AE820003CECB /* Home */ = {
+		A9FA1F102C90AE820003CECB /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
 				A99BC4B12C35B935009E9FC1 /* HomeViewController.swift */,
-				A90E1FE62C3BFB1C00E7E1C8 /* HomeViewModel.swift */,
 			);
-			path = Home;
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 		A9FA1F112C90AFC80003CECB /* ProfileView */ = {
@@ -723,6 +710,8 @@
 				A9C717542CDCFD7F00E1CE95 /* ViewModel */,
 				A9C717552CDCFD9600E1CE95 /* ViewController */,
 				A9C717562CDD06B300E1CE95 /* LandingViewController */,
+				A9C717572CDDF3A200E1CE95 /* ViewModel */,
+				A9C717582CDDF3CB00E1CE95 /* ScannerPage */,
 			);
 			name = BikeRentalApp;
 			packageProductDependencies = (
@@ -881,7 +870,6 @@
 				A9CEAE392C3EA214003AE4A2 /* DetailsViewController.swift in Sources */,
 				A902312B2C42701100C4AC3C /* UserInfo.swift in Sources */,
 				A914DCA22C4C4A9300E2A224 /* AlertView.swift in Sources */,
-				A914DCA62C4D0C3300E2A224 /* ScannerViewModel.swift in Sources */,
 				A90E20012C3D829C00E7E1C8 /* ProfileView.swift in Sources */,
 				A99BC4AB2C35AEE3009E9FC1 /* RegisterRequest.swift in Sources */,
 				A914DCB72C4E79B500E2A224 /* MobileNetV2.mlmodel in Sources */,
@@ -891,7 +879,6 @@
 				A99BC4B22C35B935009E9FC1 /* HomeViewController.swift in Sources */,
 				A99BC4942C35A959009E9FC1 /* RootViewController.swift in Sources */,
 				A9FA1F082C874FF90003CECB /* DashboardView.swift in Sources */,
-				A914DC9A2C4BE9B800E2A224 /* ScannerViewController.swift in Sources */,
 				A99BC4632C35A13A009E9FC1 /* AppDelegate.swift in Sources */,
 				A942CB8B2C4919860047F7A3 /* LeaderboardView.swift in Sources */,
 				A99BC49B2C35A9FC009E9FC1 /* CustomInputView.swift in Sources */,
@@ -912,7 +899,6 @@
 				A942CB872C4919380047F7A3 /* LeaderboardViewModel.swift in Sources */,
 				A90231232C426E6A00C4AC3C /* ProfileViewModel.swift in Sources */,
 				A914DCB32C4E786300E2A224 /* Classifier.swift in Sources */,
-				A90E1FE72C3BFB1C00E7E1C8 /* HomeViewModel.swift in Sources */,
 				A99BC4802C35A37D009E9FC1 /* StackViewExtension.swift in Sources */,
 				A99BC4992C35A9D7009E9FC1 /* CustomButton.swift in Sources */,
 				A971FDA12C404F3200B91A48 /* BikeAnnotationView.swift in Sources */,

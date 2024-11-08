@@ -13,6 +13,7 @@ import FirebaseAuth
 // MARK: - Protocols
 
 protocol HomeViewModelDelegate: AnyObject {
+    func reloadData()
     func scrollToItem(at indexPath: IndexPath, animated: Bool)
     func updatePageControl(currentPage: Int)
 }
@@ -79,6 +80,16 @@ final class HomeViewModel: ObservableObject {
         delegate?.scrollToItem(at: positionToScroll, animated: true)
         currentIndex = selectedPage
     }
+    
+    func viewDidLoad() {
+        fetchData { [weak self] in
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                self.delegate?.reloadData()
+            }
+        }
+    }
+    
     
     func fetchUserInfo() {
         guard let userId = userId else {
