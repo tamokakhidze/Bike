@@ -34,6 +34,7 @@ class CustomButton: UIButton {
     }
     
     private func configureAppearance(hasBackground: Bool, width: CGFloat) {
+        self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = hasBackground ? Colors.background: .clear
         self.heightAnchor.constraint(equalToConstant: hasBackground ? Sizing.largeHeight : Sizing.smallHeight).isActive = true
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
