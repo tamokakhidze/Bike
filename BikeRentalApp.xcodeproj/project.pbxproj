@@ -75,7 +75,6 @@
 		A94AD8582C7D02730079B8D8 /* RentStatusExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A94AD8472C7D02700079B8D8 /* RentStatusExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A94AD85D2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */; };
 		A94AD85E2C7DD6870079B8D8 /* BookingAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */; };
-		A971FD9B2C404E3400B91A48 /* FullMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FD9A2C404E3400B91A48 /* FullMapViewController.swift */; };
 		A971FD9F2C404EE600B91A48 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FD9E2C404EE600B91A48 /* SuccessViewController.swift */; };
 		A971FDA12C404F3200B91A48 /* BikeAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971FDA02C404F3200B91A48 /* BikeAnnotationView.swift */; };
 		A996B28A2C7F76F4006E3996 /* InvitationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996B2892C7F76F4006E3996 /* InvitationService.swift */; };
@@ -206,7 +205,6 @@
 		A94AD8532C7D02730079B8D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A94AD8552C7D02730079B8D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A94AD85C2C7DD6870079B8D8 /* BookingAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingAttributes.swift; sourceTree = "<group>"; };
-		A971FD9A2C404E3400B91A48 /* FullMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMapViewController.swift; sourceTree = "<group>"; };
 		A971FD9C2C404E9800B91A48 /* BikeRentalApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BikeRentalApp.entitlements; sourceTree = "<group>"; };
 		A971FD9E2C404EE600B91A48 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		A971FDA02C404F3200B91A48 /* BikeAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAnnotationView.swift; sourceTree = "<group>"; };
@@ -251,6 +249,7 @@
 		A9C717562CDD06B300E1CE95 /* LandingViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LandingViewController; sourceTree = "<group>"; };
 		A9C717572CDDF3A200E1CE95 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		A9C717582CDDF3CB00E1CE95 /* ScannerPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ScannerPage; sourceTree = "<group>"; };
+		A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FullMapViewController; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,12 +368,12 @@
 			path = RentStatus;
 			sourceTree = "<group>";
 		};
-		A971FD992C404E2400B91A48 /* FullMapVC */ = {
+		A971FD992C404E2400B91A48 /* FullMapPage */ = {
 			isa = PBXGroup;
 			children = (
-				A971FD9A2C404E3400B91A48 /* FullMapViewController.swift */,
+				A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */,
 			);
-			path = FullMapVC;
+			path = FullMapPage;
 			sourceTree = "<group>";
 		};
 		A971FD9D2C404ED500B91A48 /* SuccessVC */ = {
@@ -445,7 +444,7 @@
 				A99BC4952C35A99D009E9FC1 /* LandingPage */,
 				A99BC4922C35A940009E9FC1 /* RootVC */,
 				A99BC4B02C35B914009E9FC1 /* HomePage */,
-				A971FD992C404E2400B91A48 /* FullMapVC */,
+				A971FD992C404E2400B91A48 /* FullMapPage */,
 				A9CEAE372C3EA15D003AE4A2 /* DetailsVC */,
 				A99BC4B32C35B963009E9FC1 /* LeaderBoardVC */,
 				A942CB7F2C4917980047F7A3 /* ShopVC */,
@@ -712,6 +711,7 @@
 				A9C717562CDD06B300E1CE95 /* LandingViewController */,
 				A9C717572CDDF3A200E1CE95 /* ViewModel */,
 				A9C717582CDDF3CB00E1CE95 /* ScannerPage */,
+				A9C7175F2CDE0A6500E1CE95 /* FullMapViewController */,
 			);
 			name = BikeRentalApp;
 			packageProductDependencies = (
@@ -854,7 +854,6 @@
 				A942A3B52C3EC10300D0833E /* midPoint.swift in Sources */,
 				A942CBA42C49D30A0047F7A3 /* DetailsViewModel.swift in Sources */,
 				A942CB892C49195D0047F7A3 /* LeaderboardHostingViewController.swift in Sources */,
-				A971FD9B2C404E3400B91A48 /* FullMapViewController.swift in Sources */,
 				A902312D2C427F2F00C4AC3C /* CalendarViewModel.swift in Sources */,
 				A942CB9A2C491ED90047F7A3 /* Product.swift in Sources */,
 				A914DCA42C4C646C00E2A224 /* JsonBackup.swift in Sources */,
