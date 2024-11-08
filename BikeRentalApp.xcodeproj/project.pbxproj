@@ -334,12 +334,12 @@
 			path = ShopVC;
 			sourceTree = "<group>";
 		};
-		A942CB9B2C494CB60047F7A3 /* AllBikesVC */ = {
+		A942CB9B2C494CB60047F7A3 /* AllBikesViewController */ = {
 			isa = PBXGroup;
 			children = (
 				A942CB9C2C494CC90047F7A3 /* AllBikesViewController.swift */,
 			);
-			path = AllBikesVC;
+			path = AllBikesViewController;
 			sourceTree = "<group>";
 		};
 		A94AD8302C7BC3E30079B8D8 /* BikeAppWidget */ = {
@@ -577,7 +577,7 @@
 			children = (
 				A9C717572CDDF3A200E1CE95 /* ViewModel */,
 				A9FA1F102C90AE820003CECB /* HomeViewController */,
-				A942CB9B2C494CB60047F7A3 /* AllBikesVC */,
+				A942CB9B2C494CB60047F7A3 /* AllBikesViewController */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
