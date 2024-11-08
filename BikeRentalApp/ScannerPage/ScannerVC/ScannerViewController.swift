@@ -10,10 +10,16 @@ import VisionKit
 
 // MARK: - ScannerViewController
 
-class ScannerViewController: UIViewController {
+final class ScannerViewController: UIViewController {
     
-    // MARK: - Properties
-
+    // MARK: - UI Components and Properties
+    
+    let scanButton = CustomButton(
+        title: Titles.scannerButtonTitle,
+        hasBackground: true,
+        width: Sizing.buttonWidth
+    )
+    
     private var viewModel = ScannerViewModel()
     
     var scannerAvailable: Bool {
@@ -25,30 +31,50 @@ class ScannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        viewModel.delegate = self
+        addTargets()
+        setDelegates()
     }
     
-    // MARK: - Ui setup
+    // MARK: - UI Setup
 
-    func setupUI() {
+    private func setupUI() {
+        setupView()
+        setupViewHierarchy()
+        setConstraints()
+    }
+    
+    private func setupView() {
         view.backgroundColor = .loginBackground
-        let scanButton = CustomButton(title: "Scan bike", hasBackground: true, width: 350)
-        scanButton.addTarget(self, action: #selector(scanButtonTapped), for: .touchUpInside)
-        
+    }
+    
+    private func setupViewHierarchy() {
         view.addSubview(scanButton)
-        
+    }
+    
+    private func setConstraints() {
         NSLayoutConstraint.activate([
             scanButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            scanButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            scanButton.widthAnchor.constraint(equalToConstant: 350),
-            scanButton.heightAnchor.constraint(equalToConstant: 50)
+            scanButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
+    }
+    
+    // MARK: - Add Targets
+    private func addTargets() {
+        scanButton.addTarget(self, action: #selector(scanButtonTapped), for: .touchUpInside)
+    }
+    
+    // MARK: - Set Delegates
+    
+    private func setDelegates() {
+        viewModel.delegate = self
     }
     
     // MARK: - Methods
     
-    func setupScanner() {
-        let dataScanner = DataScannerViewController(recognizedDataTypes: [.barcode()], isHighlightingEnabled: true)
+    private func setupScanner() {
+        let dataScanner = DataScannerViewController(
+            recognizedDataTypes: [.barcode()],
+            isHighlightingEnabled: true)
         dataScanner.delegate = self
         present(dataScanner, animated: true) {
             try? dataScanner.startScanning()
@@ -61,9 +87,11 @@ class ScannerViewController: UIViewController {
         if scannerAvailable {
             setupScanner()
         } else {
-            let alert = UIAlertController(title: "Scanner Not Available", 
-                                          message: "The data scanner is not supported or not available on this device.",
-                                          preferredStyle: .alert)
+            let alert = UIAlertController(
+                title: Titles.alertTitle,
+                message: Titles.alertMessage,
+                preferredStyle: .alert
+            )
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
         }
@@ -100,4 +128,14 @@ extension ScannerViewController: ScannerViewModelDelegate {
     }
 }
 
-
+extension ScannerViewController {
+    enum Sizing {
+        static let buttonWidth: CGFloat = 350
+    }
+    
+    enum Titles {
+        static let scannerButtonTitle = "Scan bike"
+        static let alertTitle = "Scanner Not Available"
+        static let alertMessage = "The data scanner is not supported or not available on this device."
+    }
+}
