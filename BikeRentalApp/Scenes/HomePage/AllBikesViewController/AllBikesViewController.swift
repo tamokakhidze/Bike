@@ -14,7 +14,7 @@ final class AllBikesViewController: UIViewController {
     // MARK: - UI Components and Properties
     
     private var titleLabel = CustomUiLabel(
-        fontSize: titleLabelFontSize,
+        fontSize: Sizing.titleLabelFontSize,
         text: Titles.allBikes,
         tintColor: .primaryText,
         textAlignment: .center

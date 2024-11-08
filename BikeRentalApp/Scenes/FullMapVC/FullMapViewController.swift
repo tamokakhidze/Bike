@@ -13,7 +13,7 @@ import CoreLocation
 
 final class FullMapViewController: UIViewController {
     
-    // MARK: - Ui components and properties
+    // MARK: - UI Components and Properties
 
     private let map = MKMapView()
     private let manager = CLLocationManager()
@@ -25,16 +25,24 @@ final class FullMapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setDelegates()
         configureManager()
         setupUI()
-        setDelegates()
         fetchBikeLocations()
     }
     
-    // MARK: - Ui setup
+    // MARK: - UI Setup
 
     private func setupUI() {
+        setupViewHierarchy()
+        setConstraints()
+    }
+    
+    private func setupViewHierarchy() {
         view.addSubview(map)
+    }
+    
+    private func setConstraints() {
         map.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -49,12 +57,12 @@ final class FullMapViewController: UIViewController {
 
     private func setDelegates() {
         map.delegate = self
+        manager.delegate = self
     }
     
     // MARK: - Map Logic
 
     private func configureManager() {
-        manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
@@ -68,7 +76,7 @@ final class FullMapViewController: UIViewController {
     
     private func updateNearbyLocations()  {
         nearbyLocations = viewModel.locations.filter { location in
-            userLocation.distance(from: location) <= 10000
+            userLocation.distance(from: location) <= Map.nearbyDistance
         }
         updateMapAnnotations()
     }
@@ -135,25 +143,24 @@ extension FullMapViewController: CLLocationManagerDelegate {
 
 extension FullMapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let reuseIdentifier = "CustomAnnotationView"
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier) as? BikeAnnotationView
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: Map.annotationIdentifier) as? BikeAnnotationView
         
         if annotationView == nil {
-            annotationView = BikeAnnotationView(annotation: annotation, reuseIdentifier: reuseIdentifier)
+            annotationView = BikeAnnotationView(annotation: annotation, reuseIdentifier: Map.annotationIdentifier)
         } else {
             annotationView?.annotation = annotation
         }
         
         annotationView?.configure(with: annotation)
-        if annotation.title == "Road" {
-            annotationView?.image = UIImage(resource: .roadBike)
-        } else if annotation.title == "Mountain" {
-            annotationView?.image = UIImage(resource: .mapPin)
+        if annotation.title == Titles.road {
+            annotationView?.image = .roadBike
+        } else if annotation.title == Titles.mountain {
+            annotationView?.image = .mapPin
         } else {
-            annotationView?.image = UIImage(resource: .currentLoc)
+            annotationView?.image = .currentLoc
         }
-        annotationView?.image = UIImage(named: "mapPinImage")
+        annotationView?.image = .mapPin
         
         return annotationView
     }
@@ -163,5 +170,17 @@ extension FullMapViewController: MKMapViewDelegate {
         if let bike = viewModel.bikes.first(where: { $0.location.latitude == coordinate.latitude && $0.location.longitude == coordinate.longitude }) {
             navigationController?.pushViewController(DetailsViewController(bike: bike), animated: true)
         }
+    }
+}
+
+extension FullMapViewController {
+    enum Map {
+        static let nearbyDistance: Double = 10000
+        static let annotationIdentifier = "AnnotationIdentifier"
+    }
+    
+    enum Titles {
+        static let road = "Road"
+        static let mountain = "Mountain"
     }
 }
